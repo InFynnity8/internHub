@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="internlogo.jpg" width ="300px" alt="">
+        </div>
+        <div class="links">
+            <a href="/home/home.html" >Home</a>
+            <a href="/Intern/intern.html" >Intern</a>
+            <a href="/about/about.html" >About Us</a>
+            <a href="/contact/contact.html">Contact Us</a>
+        </div>
+        <div class="navbtns">
+            <button class="navbtn2"><a href="/home/signin/signin.html"> Hello, Sign In</a></button>
+        </div> 
+    </div>  
+    
+    <div class="main">
+        <div class="signupimage">
+            <img src="signinpic.avif" alt="">
+        </div>
+
+        <div class="signupsection">
+
+            <div class="title">
+                <h3>Welcome to InternHub</h3>
+            
+            </div>
+
+            <form action="#">
+              <div class="nameEmail">
+                <span class="data">
+                    <label for="Email" >Email</label>
+                    <input type="email" name="Email" placeholder="internguy@example.com" required >
+                </span>
+            </div>
+            
+            <div class="pass">
+                <span class="data">
+                    <label for="Password">Password</label>
+                    <input type="password" name="Password" placeholder="Password" required><ion-icon name="eye" class="eye"></ion-icon>
+                </span>
+            </div>
+            <a href="">Forget your password?</a>
+                <button class="signupbtn">Login</button>
+            </form>
+
+            <div class="dividend">
+                <span class="orline"></span><p>OR</p><span class="orline"></span>
+            </div>
+            <div class="alt">
+                
+                <button class="fb"><i class='bx bxl-facebook-circle'></i>Continue with Facebook</button>
+                <button class="google"> <img src="search.png" width="23px" alt=""> Continue with Google</button>
+
+                <a href="/home/signup/signup.html">Don't Have account? Sign up</a>
+                <span></span>
+                <p>By continuing, you agree to InternHub's
+                    Terms of Service and acknowledge you have read our
+                    Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
