@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 
 /* navigation bar */
 
@@ -35,7 +39,7 @@
     margin-right: 50px;
     padding-left: 150px;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 500;
    
 }
 
@@ -129,7 +133,7 @@
 
 .main .signupimage img{
     position: absolute;
-    width: 600px; 
+    width: 580px; 
     height: 500px;
     left: 0px;
 }

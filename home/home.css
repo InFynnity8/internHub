@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 
 /* navigation bar */
 
@@ -36,7 +40,7 @@
     margin-right: 10px;
     padding-left: 100px;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 500;
    
 }
 
@@ -366,14 +370,14 @@ ul{
     padding-right: 50px;
     display: flex;
     margin-bottom: 20px;
-
+    line-height: 25px;
 }
 
 .aboutimg{
     background: url("aboutus.jpg");
     background-size: cover;
     width: 600px;
-    height: 450px;
+    height: 550px;
 }
 
 .aboutcontent{
@@ -385,7 +389,7 @@ ul{
 .aboutbtnbox{
     display: flex;
     justify-content: end;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .aboutbtn{
