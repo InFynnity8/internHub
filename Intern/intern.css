@@ -29,6 +29,16 @@ body{
 
 }
 
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
 .logo:hover{
    cursor: pointer;
 }
@@ -38,7 +48,7 @@ body{
     justify-content: right;
     align-items: center;
     margin-right: 50px;
-    padding-left: 150px;
+    padding-left: 250px;
     font-size: 1.2em;
     font-weight: 500;
    
@@ -156,42 +166,42 @@ body{
 
 .cardimage1{
     width: 60%;
-    background: url("uiintern.jpeg");
+    background: url("/asset/uiintern.jpeg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage2{
     width: 60%;
-    background: url("softintern.jpeg");
+    background: url("/asset/softintern.jpeg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage3{
     width: 60%;
-    background: url("cocoaintern.jpg");
+    background: url("/asset/cocoaintern.jpg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage4{
     width: 60%;
-    background: url("businessintern.jpg");
+    background: url("/asset/businessintern.jpg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage5{
     width: 60%;
-    background: url("networkintern.jpg");
+    background: url("/asset/networkintern.jpg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage6{
     width: 60%;
-    background: url("aiintern.jpg");
+    background: url("/asset/aiintern.jpg");
     background-size: cover;
     margin-right: 30px;
     background-repeat: no-repeat;
@@ -200,42 +210,42 @@ body{
 
 .cardimage7{
     width: 60%;
-    background: url("marketintern.jpeg.jpg");
+    background: url("/asset/marketintern.jpeg.jpg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage8{
     width: 60%;
-    background: url("businessintern.jpg");
+    background: url("/asset/businessintern.jpg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage9{
     width: 60%;
-    background: url("cocoaintern.jpg");
+    background: url("/asset/cocoaintern.jpg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage10{
     width: 60%;
-    background: url("softintern.jpeg");
+    background: url("/asset/softintern.jpeg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage11{
     width: 60%;
-    background: url("uiintern.jpeg");
+    background: url("/asset/uiintern.jpeg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage12{
     width: 60%;
-    background: url("businessintern.jpg");
+    background: url("/asset/businessintern.jpg");
     background-size: cover;
     margin-right: 30px;
 }

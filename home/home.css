@@ -22,14 +22,17 @@ body{
 }
 
 .logo{
-    font-size: 1.5em;
     display: flex;
-    justify-content: left;
-    font-weight: 900;   
-
+    justify-content: left; 
 }
 
-.logo:hover{
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.logo img:hover{
    cursor: pointer;
 }
 
@@ -38,7 +41,7 @@ body{
     justify-content: right;
     align-items: center;
     margin-right: 10px;
-    padding-left: 100px;
+    padding-left: 180px;
     font-size: 1.2em;
     font-weight: 500;
    
@@ -147,7 +150,7 @@ body{
     color: rgb(77, 135, 242);
     margin-top: 100px;
     margin-bottom: 50px;
-    font-size: 3em;
+    font-size: 35px;
 }
 
 .intro .intern{
@@ -215,12 +218,13 @@ body{
 
 .hello-photo{
     position: absolute;
-    width: 550px;
-    background: url("hellologo.jpg");
+    width: 700px;
+    background: url("/asset/Asset\ 1.png");
     background-repeat: no-repeat;
-    height: 600px;
-    top: 160px;
-    right: 50px;
+    background-size: contain;
+    height: 330px;
+    top: 150px;
+    right: -150px;
 }
 
 
@@ -251,28 +255,28 @@ body{
 
 .cardimage1{
     width: 60%;
-    background: url("uiintern.jpeg");
+    background: url(/asset/uiintern.jpeg);
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage2{
     width: 60%;
-    background: url("softintern.jpeg");
+    background: url("/asset/softintern.jpeg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage3{
     width: 60%;
-    background: url("cocoaintern.jpg");
+    background: url("/asset/cocoaintern.jpg");
     background-size: cover;
     margin-right: 30px;
 }
 
 .cardimage4{
     width: 60%;
-    background: url("businessintern.jpg");
+    background: url("/asset/businessintern.jpg");
     background-size: cover;
     margin-right: 30px;
 }
@@ -374,7 +378,7 @@ ul{
 }
 
 .aboutimg{
-    background: url("aboutus.jpg");
+    background: url("/asset/aboutus.jpg");
     background-size: cover;
     width: 600px;
     height: 550px;
@@ -685,8 +689,9 @@ ul{
 .messagesection{
     width: 100%;
     height: 731px;
+    background-color: rgba(0, 0, 0, .7);
     border-top: 1px solid rgb(77, 135, 242);
-    background: url('businesspic.png');
+    background-image: url('/asset/people.png');
     background-repeat: none;
     background-size: cover;
 }
@@ -742,11 +747,13 @@ ul{
     font-size: 1em;
     background: rgb(77, 135, 242);
     margin-top: 20px;
+    transition: .3s;
 }
 
 .sendmessage .sendmessagebtn:hover{
     cursor: pointer;
     background: rgb(28, 104, 245);
+    border: none;
 }
 
 .quicklinks{
@@ -816,11 +823,13 @@ ul{
     font-size: 1em;
     background: rgb(77, 135, 242);
     margin-top: 20px;
+    transition: .3s;
 }
 
 .contacts .subscribe:hover{
     cursor: pointer;
     background: rgb(28, 104, 245);
+    border: none;
 }
 
 .mediaicons{

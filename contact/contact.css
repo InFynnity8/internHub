@@ -22,11 +22,17 @@ body{
 }
 
 .logo{
-    font-size: 1.5em;
     display: flex;
     justify-content: left;
-    font-weight: 900;   
+}
 
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.logo img:hover{
+   cursor: pointer;
 }
 
 .logo:hover{
@@ -110,25 +116,110 @@ body{
     color: white;
 }
 
-.content .welcom{
-    text-align: center;
-    color: rgb(77, 135, 242);
-    font-size: 50px;
-    margin-top: 100px;
-    font-weight: 500;
+.backimage{
+    position: absolute;
+    background: url('/asset/Group\ 20.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 600px;
+    left: 280px;
+    top: 90px;
 }
 
 .content p{
     text-align: center;
     color: rgb(77, 135, 242);
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 30px;
     font-weight: 500;
+}
+
+.content .welcome{
+    text-align: center;
+    color: rgb(77, 135, 242);
+    font-size: 70px;
+    margin-top: 100px;
+    font-weight: 500;
+}
+
+.questionarea{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.questionarea .question{
+    padding: 10px;
+    border: 1px solid rgb(77, 135, 242);
+    margin-top: 220px;
+    margin-bottom: 10px;
+    width: 550px;
+    font-size: 15px;
+}
+
+.questionarea .email{
+    padding: 10px;
+    border: 1px solid rgb(77, 135, 242);
+    margin-bottom: 20px;
+    width: 550px;
+    font-size: 15px;
+}
+
+.questionarea .message{
+    padding: 10px;
+    border: 1px solid rgb(77, 135, 242);
+    height: 240px;
+    outline: none;
+    padding: 10px;
+    padding-bottom: 210px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    width: 550px;
+    font-size: 15px;
+}
+
+.questionarea p{
+    color: rgb(77, 135, 242);
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.questionarea .subbtn{
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: rgb(77, 135, 242);
+    color: white;
+    margin-left: 440px;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.questionarea .subbtn:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+}
+
+.questionarea i{
+    font-size: 30px;
+    color: rgb(77, 135, 242);
+    position: absolute;
+    right: 410px;
+    top: 497px;
+}
+
+.questionarea i:hover{
+    cursor: pointer;
 }
 
 
 footer{
-    background: rgb(77, 135, 242);
+    background: rgb(28, 104, 245);
+  
 }
 
 .conclude1{

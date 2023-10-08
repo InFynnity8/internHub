@@ -29,6 +29,16 @@ body{
 
 }
 
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
 .logo:hover{
    cursor: pointer;
 }
@@ -398,7 +408,7 @@ body{
 .ourteam h3{
     color: rgb(77, 135, 242);
     margin: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .members{
@@ -419,7 +429,7 @@ body{
 .members .card .image1{
     width: 280px;
     height: 260px;
-    background: url(man1.webp);
+    background: url(/asset/man1.webp);
     background-size: cover;
     background-position: absolute;
     
@@ -428,7 +438,7 @@ body{
 .members .card .image2{
     width: 280px;
     height: 260px;
-    background: url(man2.avif);
+    background: url(/asset/man2.avif);
     background-size: cover;
 }
 
@@ -436,20 +446,19 @@ body{
 .members .card .image3{
     width: 280px;
     height: 260px;
-    background: url(man3.jpeg);
+    background: url(/asset/man3.jpeg);
     background-size: cover;
 }
 
 .members .card .image4{
     width: 280px;
     height: 260px;
-    background: url(woman.jpg);
+    background: url(/asset/woman.jpg);
     background-size: cover;
 }
 
 .identity h3{
     text-align: center;
-    margin-top: 30px;
 }
 
 .identity p{
@@ -488,7 +497,8 @@ h6{
     width: 100%;
     height: 731px;
     border-top: 1px solid rgb(77, 135, 242);
-    background: url('businesspic.png');
+    background-color: rgba(0, 0, 0, .7);
+    background-image: url('/asset/people.png');
     background-repeat: none;
     background-size: cover;
 }

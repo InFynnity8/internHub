@@ -28,6 +28,15 @@ body{
     font-weight: 900;   
 }
 
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
 .logo:hover{
    cursor: pointer;
 }
@@ -37,7 +46,7 @@ body{
     justify-content: right;
     align-items: center;
     margin-right: 50px;
-    padding-left: 150px;
+    padding-left: 250px;
     font-size: 1.2em;
     font-weight: 500;
    
@@ -94,7 +103,7 @@ body{
     border-radius: 30px;
     width: 150px;
     height: 35px;
-    margin-left: 120px;
+    margin-left: 20px;
     font-size: 0.8em;
     transition: .3s;
 }
@@ -133,9 +142,10 @@ body{
 
 .main .signupimage img{
     position: absolute;
-    width: 580px; 
-    height: 500px;
-    left: 0px;
+    width: 400px; 
+    height: 400px;
+    top: 120px;
+    left: 90px;
 }
 
 .main .signupsection{
