@@ -125,6 +125,7 @@ body{
     height: 600px;
     left: 280px;
     top: 90px;
+    z-index: -1;
 }
 
 .content p{
@@ -157,6 +158,7 @@ body{
     margin-bottom: 10px;
     width: 550px;
     font-size: 15px;
+    outline: none;
 }
 
 .questionarea .email{
@@ -165,6 +167,7 @@ body{
     margin-bottom: 20px;
     width: 550px;
     font-size: 15px;
+    outline: none;
 }
 
 .questionarea .message{
@@ -185,7 +188,6 @@ body{
     font-size: 14px;
     text-align: center;
 }
-
 
 .questionarea .subbtn{
     width: 110px;
@@ -209,12 +211,103 @@ body{
     color: rgb(77, 135, 242);
     position: absolute;
     right: 410px;
-    top: 497px;
+    top: 597px;
 }
 
 .questionarea i:hover{
     cursor: pointer;
 }
+
+
+
+/* contactmain */
+
+h3{
+    color: rgb(77, 135, 242);
+    margin-left: 150px;
+}
+
+.main-contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 150px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.contact-info{
+    display: grid;
+    justify-content: center;
+}
+
+.contact-info .phoneEmail{
+    border: 1px solid rgb(77, 135, 242);
+    height: 230px;
+    width: 250px;
+    padding: 20px;
+    color: rgb(77, 135, 242);
+
+}
+
+
+
+.phoneEmail i{
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.mail{
+    margin-top: 50px;
+}
+
+.phone div{
+    position: absolute;
+    left: 210px;
+    top: 1200px;
+
+}
+
+.mail div{
+    position: absolute;
+    left: 210px;
+    top: 1300px;
+
+}
+
+.address i{
+    font-size: 30px;
+}
+
+.address .line{
+    margin-bottom: 10px;
+}
+
+.contact-info .address{
+    margin-top: 30px;
+    border: 1px solid rgb(77, 135, 242);
+    height: 270px;
+    width: 250px;
+    padding: 20px;
+    color: rgb(77, 135, 242);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.one{
+    position: absolute;
+    top: 1447px;
+    left: 210px;
+}
+
+.main-contact .map{
+    border: 1px solid rgb(77, 135, 242);
+    height: 530px;
+    width: 700px;
+}
+
+
 
 
 footer{
@@ -263,3 +356,8 @@ footer{
     padding-bottom: 15px;
 }
 
+
+iframe {
+    width: 698px;
+    height: 528px;
+}

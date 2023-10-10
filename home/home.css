@@ -99,6 +99,20 @@ body{
     transition: .5s;
 }
 
+.navbtn1 a{
+    text-decoration: none;
+    color: rgb(77, 135, 242);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 37px;
+    padding-right: 37px;
+    transition: .5s;
+}
+
+.navbtn1 a:hover{
+    color: white;
+}
+
 .navbtn1:hover{
     cursor: pointer;
     color: white;
@@ -116,6 +130,7 @@ body{
     margin-left: 10px;
     font-size: 0.8em;
     transition: .3s;
+ 
 }
 
 .navbtn2:hover{
@@ -126,6 +141,10 @@ body{
 .navbtn2 a{
     text-decoration: none;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 34px;
+    padding-right: 34px;
 }
 
 
@@ -172,6 +191,7 @@ body{
     height: 45px;
     margin-bottom: 10px;
     border: 1px solid rgb(77, 135, 242);
+    font-size: 16px;
 }
 
 .bx.bx-chevron-down{
