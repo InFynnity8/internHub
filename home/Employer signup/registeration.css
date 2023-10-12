@@ -132,24 +132,67 @@ form label{
     color: rgb(77, 135, 242);
 }
 
-/* form input{
+form .info {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .info label{
+    margin-bottom: 10px;
+}
+
+form .info input{
     outline: none;
     border: 1px solid rgb(77, 135, 242);
-    padding-left: 20px;
-    width: 350px;
+    padding-left: 10px;
+    width: 450px;
     height: 35px;
-} */
+    margin-bottom: 20px;
+}
+
+form .choice{
+  
+    color: rgb(77, 135, 242);
+    margin-bottom: 20px;
+}
+
+form .choice input{
+    margin-top: 10px;
+    color: rgb(77, 135, 242);
+}
+
+form .largearea {
+    display: grid;
+    align-items: center;
+}
+
+form .largearea input{
+    outline: none;
+    border: 1px solid rgb(77, 135, 242);
+    padding-left: 10px;
+    width: 450px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 210px;
+}
 
 form .submitbtn{
-    margin-top: 30px;
+    margin-top: 10px;
     background: rgb(77, 135, 242);
     color: white;
     border: none;
     border-radius: 20px;
     width: 130px;
     height: 35px;
-    margin-left: 220px;
+    margin-left: 300px;
     transition: .5s;
+}
+
+form .submitbtn:hover{
+    cursor: pointer;
+    background: rgb(36, 101, 221);
 }
 
 form .submitbtn a{
@@ -182,7 +225,216 @@ form .left{
 form .right{
     display: grid;
     margin-right: 130px;
-    margin-top: 26px;
+    margin-top: -10px;
+}
+
+
+/* messagesection */
+
+.messagesection{
+    width: 100%;
+    height: 731px;
+    background-color: rgba(0, 0, 0, .7);
+    border-top: 1px solid rgb(77, 135, 242);
+    background-image: url('/asset/people.png');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.lastsection{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.sendmessage{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    width: 600px;
+    height: 350px;
+    border-right: 1px solid white;
+
+}
+
+.sendmessage p{
+    color: white;
+    
+}
+
+.sendmessage .yourmessage{
+    width: 400px;
+    height: 200px;
+    padding-bottom: 170px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+
+.sendmessage .email{
+    height: 30px;
+    width: 250px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+}
+
+.sendmessage .sendmessagebtn{
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
+    font-size: 1em;
+    background: rgb(77, 135, 242);
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.sendmessage .sendmessagebtn:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+    border: none;
+}
+
+.quicklinks{
+    width:380px;
+    height: 350px;
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    padding-top: 20px;
+    padding-bottom: 260px;
+    color: white;
+    border-right: 1px solid white;
+
+}
+
+.quicklinks p{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.quicklinks a{
+    margin-top: 10px;
+    color: white;
+}
+
+.contacts{
+    width: 386px;
+    height: 620px;
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    height: 620px;
+    padding-top: 140px;
+    padding-bottom: 160px;
+    color: white;
+    padding-left: 70px;
+    padding-right: 50px;
+}
+
+.contacts .title{
+    font-weight: 600;
+}
+
+.contacts span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+
+.contacts .phone{
+    display: flex;
+    align-items: center;
+}
+
+.contacts .mail{
+    display: flex;
+    align-items: center;
+}
+
+.contacts .subscribe{
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
+    font-size: 1em;
+    background: rgb(77, 135, 242);
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.contacts .subscribe:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+    border: none;
+}
+
+.mediaicons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.mediaicons i{
+    font-size: 30px;
+}
+
+.contacts .email{
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.conclude1{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.conclude1 a{
+    color: white;
+}
+
+.conclude2 a{
+    color: white;
+}
+
+
+.conclude2{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+.copyright{
+    margin-right: 50px;
+    margin-left: 90px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 15px;
 }
 
 

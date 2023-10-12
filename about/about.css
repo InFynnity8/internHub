@@ -581,7 +581,7 @@ h6{
 }
 
 .quicklinks a{
-   
+    margin-top: 10px;
     color: white;
 }
 
@@ -665,11 +665,11 @@ h6{
 }
 
 .conclude1 a{
-    color: rgb(28, 104, 245);
+    color: white;
 }
 
 .conclude2 a{
-    color: rgb(28, 104, 245);
+    color: white;
 }
 
 
@@ -691,7 +691,7 @@ h6{
     margin-left: 90px;
     display: flex;
     justify-content: space-between;
-    color: rgb(28, 104, 245);
+    color: white;
     padding-bottom: 15px;
 }
 

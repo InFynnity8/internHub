@@ -6,6 +6,7 @@
     <title>Sign Up | Employer </title>
     <link rel="stylesheet" href="registeration.css">
     <link rel="icon" type="image/x-icon" href="/asset/layer.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="navbar">
@@ -35,43 +36,128 @@
         <div class="forms">
             <form action="">
                 <div class="left">
-                    <label for="Job title">Job title:</label>
-                    <input type="text" name="Job title" placeholder="" required>
-                    <label for="Terms">Terms:</label>
-                    <input type="text" name="Terms" placeholder="" required>
-                    <label for="Intern Number">Number of intern needed:</label>
-                    <input type="text" name="Intern Number" placeholder="" required>
-                    <label for="branches">Do you have branches?</label>
-                    <input type="radio" name="branches" value="Yes" placeholder="" checked> Yes <br>
-                    <input type="radio" name="branches" value="No" placeholder="" > No
-                    <label for="Branch location">Branch location:</label>
-                    <input type="text" name="Branch location" placeholder="e.g Kumasi(Asafo),Accra, Takoradi" required>
-                    <label for="Branch intern number">Number of intern needed at that branch:</label>
-                    <input type="text" name="Branch intern number" placeholder="e.g (5), (3), (11)" required>
-                    <label for="Role">Job description/Intern role:</label>
-                    <input type="text" name="Role" placeholder="please describe the role of the intern on the job..." required>
+                    <div class="info">
+                        <label for="Job title">Job title:</label>
+                        <input type="text" name="Job title" placeholder="" required>
+                        <label for="Terms">Terms:</label>
+                        <input type="text" name="Terms" placeholder="" required>
+                        <label for="Intern Number">Number of intern needed:</label>
+                        <input type="text" name="Intern Number" placeholder="" required>
+                    </div>
+                    <div class="choice">
+                        <label for="branches">Do you have branches?</label> <br>
+                        <input type="radio" name="branches" value="Yes" placeholder="" checked> Yes <br>
+                        <input type="radio" name="branches" value="No" placeholder="" > No
+                    </div>
+                    <div class="info">
+                        <label for="Branch location">Branch location:</label>
+                        <input type="text" name="Branch location" placeholder="e.g Kumasi(Asafo),Accra, Takoradi" required>
+                        <label for="Branch intern number">Number of intern needed at that branch:</label>
+                        <input type="text" name="Branch intern number" placeholder="e.g (5), (3), (11)" required>
+                    </div>
+                    <div class="largearea">
+                        <label for="Role">Job description/Intern role:</label>
+                        <input type="text" name="Role" placeholder="please describe the role of the intern on the job..." required>
+                    </div>
                 </div>
                 <div class="right">
-                    <label for="Location">Location:</label>
-                    <input type="text" name="Location" placeholder="" required>
-                    <label for="Service">Areas needed for service:</label>
-                    <input type="text" name="Service" placeholder="" required>
-                    <label for="Duration">Duration:</label>
-                    <input type="text" name="Durarion" placeholder="" required>
-                    <label for="Stipend">Intern with stipend?</label>
-                    <input type="radio" name="Stipend" value="Yes" placeholder="" checked> Yes <br>
-                    <input type="radio" name="Stipend" value="No" placeholder="" > No
-                    <label for="Amount">Amount (Ghc):</label>
-                    <input type="text" name="Amount" placeholder="State the amount if you wish">
-                    <label for="Requirement">Intern requirement:</label>
-                    <input type="text" name="Requirement" placeholder="Type what is required from intern as they apply..." required>
-                    <button class="submitbtn"> <a href=""> Submit </a> </button>
+                    <div class="info">
+                        <label for="Location">Location:</label>
+                        <input type="text" name="Location" placeholder="" required>
+                        <label for="Service">Areas needed for service:</label>
+                        <input type="text" name="Service" placeholder="" required>
+                        <label for="Duration">Duration:</label>
+                        <input type="text" name="Durarion" placeholder="" required>
+                    </div>
+                   <div class="choice">
+                        <label for="Stipend">Intern with stipend?</label> <br>
+                        <input class="choose" type="radio" name="Stipend" value="Yes" placeholder="" checked> Yes <br>
+                        <input class="choose" type="radio" name="Stipend" value="No" placeholder="" > No
+                    </div>
+                    <div class="info">
+                        <label for="Amount">Amount (Ghc):</label>
+                        <input type="text" name="Amount" placeholder="State the amount if you wish">
+                        <label for="Requirement">Intern requirement:</label>
+                    </div>
+                    <div class="largearea">
+                        <input type="text" name="Requirement" placeholder="Type what is required from intern as they apply..." required>
+                    </div>
+                    <button class="submitbtn"> Submit </button>
                 </div>
             </form>
         </div>
     </div>
 
 
-    
+    <!-- messaging -->
+
+
+
+    <div class="messagesection">
+
+        <div class="lastsection">    
+            <div class="sendmessage">
+                <p>Hi, what can we help you with</p>
+                <input type="text" class="yourmessage" placeholder="Your message here">
+                <input type="email" class="email" placeholder="Email">
+                <button class="sendmessagebtn">Send message</button>
+            </div>
+            <div class="quicklinks">
+                <p>Quick links</p>
+                    <a href="/home/home.html">Home</a>
+                    <a href="/Intern/intern.html">Intern</a>
+                    <a href="">About Us</a>
+                    <a href="#">Contacts</a>
+                    <a href="/home/signin/signin.html">Login</a>
+                    <a href="/home/signup/signup.html">Sign up</a>
+            </div>
+            <div class="contacts">
+                <p class="title">Contacts</p>
+                <div class="phone">
+                    <span><i class='bx bx-phone-call'></i></span>
+                    <div >
+                        <p>+233 (0) 000 000 000 </p>
+                        <p>+233 (0) 000 000 000 </p>
+                    </div>
+                </div>
+
+                <div class="mail">
+                    <span class="mail"><i class='bx bxs-envelope' ></i></span> 
+                    <p>internguy@gmail.com</p>
+                </div>
+
+
+                <div class="mediaicons">
+                    <i class='bx bxl-facebook-square'></i>
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-linkedin-square'></i>
+                </div>
+
+                <p>Subscribe to our newsletter to get the lastest News and offers..</p>
+                <input type="email" class="email" placeholder="Email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+        </div>
+        <div class="conclude1">
+            <a href="/home/documentation/terms.html" >Terms and Conditions</a>   
+            <a href="/home/documentation/registration.html"> Registration Data and Account Security </a>
+                 <a href="/home/documentation/refund.html">Refund & Cancelation Policy</a>   
+        </div>
+        <div class="conclude2">
+            <a href="/home/documentation/mostimpotant.html">Most important Employer Terms & Conditions</a> 
+            <a href="/home/documentation/applicant's.html">Applicants' Most important Terms & Conditions</a>
+            <a href="/home/documentation/safety.html" >Safety Tips for Applicants</a>
+        </div>
+        <div class="copyright">
+            <p>Copyrights©2022 - InternHub</p> <p>All rights reserved</p>
+        </div>
+        
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"> </script>
 </body>
 </html>

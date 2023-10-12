@@ -154,7 +154,7 @@ body{
 
 .inroduction{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
@@ -162,7 +162,6 @@ body{
 .intro-search{
     margin-left: 50px;
     width: 50%;
-
 }
 
 .intro h1{
@@ -238,13 +237,15 @@ body{
 
 .hello-photo{
     position: absolute;
-    width: 700px;
+    width: 500px;
     background: url("/asset/Asset\ 1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 330px;
-    top: 150px;
-    right: -150px;
+    height: 450px;
+    top: 130px;
+    margin-left: 750px;
+    margin-top: 0;
+    /* background: red; */
 }
 
 
@@ -796,7 +797,7 @@ ul{
 }
 
 .quicklinks a{
-   
+    margin-top: 10px;
     color: white;
 }
 
@@ -882,11 +883,11 @@ ul{
 }
 
 .conclude1 a{
-    color: rgb(28, 104, 245);
+    color: white;
 }
 
 .conclude2 a{
-    color: rgb(28, 104, 245);
+    color: white;
 }
 
 
@@ -908,6 +909,6 @@ ul{
     margin-left: 90px;
     display: flex;
     justify-content: space-between;
-    color: rgb(28, 104, 245);
+    color: white;
     padding-bottom: 15px;
 }
