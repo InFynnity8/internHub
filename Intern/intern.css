@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    width: fit-content;
 }
 
 
@@ -126,7 +127,7 @@ body{
     width: 600px;
     height: 450px;
     border: 1px solid rgb(77, 135, 242);
-    margin: 50px;
+    margin: 40px;
     display: flex;
     padding: 30px;
     

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Employer</title>
+    <link rel="icon" type="image/x-icon" href="/asset/layer.ico">
+    <link rel="stylesheet" href="companyprofile.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="/asset/Layer 2.png" width ="150px" alt="">
+        </div>
+        <div class="links">
+            <a href="/home/home.html" >Home</a>
+            <a href="/Intern/intern.html" >Intern</a>
+            <a href="/about/about.html" >About Us</a>
+            <a href="/contact/contact.html">Contact Us</a>
+        </div>
+
+        <div class="chatbtn">
+           
+        </div>
+
+    </div>
+    
+    <div class="profilecontent">
+
+
+        <div class="currentprofile">
+            <div class="pic">
+                <div class="profilepic">
+
+                </div>
+                <div>
+                    <p>Basic Package</p>
+                    <a href="">Request Summary</a>
+                </div>
+            </div>
+
+            <div class="details">
+                <label>Business Name:</label>
+                <p>InternHub</p>
+
+                <label>Email:</label>
+                <p>internguy@gmail.com</p>
+
+                <label>Phone Number:</label>
+                <p>000 000 0000</p>
+
+                <label>Manager's Name:</label>
+                <p>Emmanuel Inkum</p>
+
+                <label>Contact Address:</label>
+                <p>000 000 000</p>
+
+                <label>Location:</label>
+                <p>Kumasi - Ashanti Region</p>
+            </div>
+        </div>
+        <div class="updateprofile">
+            <div class="header">
+                <p class="personaldetails">Personal Details</p>
+                <p class="businessdetails">Business Details</p>
+                <button class="requestbtn">Request for intern</button>
+            </div>
+
+            <form action="#">
+                <div class="personalpage">
+                    <div class="nameEmail">
+                      <span class="data" id="Fullname">
+                          <label for="Firstname" class="Firstname">First Name:</label>
+                          <input type="text" name="Firstname" class="Firstname" required >
+                          <label for="Phonenumber" class="Phonenumber">Phone Number:</label>
+                          <input type="text" name="Phonenumber" class="Phonenumber" required >
+                      </span>
+                      <span class="data">
+                        <label for="Lastname" class="Lastname">Last Name:</label>
+                        <input type="text" name="Lastname" class="Lastname" required >
+                          <label for="Email" >Email Address:</label>
+                          <input type="email" name="Email" required >
+                      </span>
+                    </div>
+
+                    <div class="pass">
+                          <span class="data" id="pass">
+                            <label for="Region" class="Region">Region:</label>
+                            <input type="text" name="Region" class="region" required >
+                          </span>
+                          <span class="data">
+                            <label for="City" class="City">City or Town:</label>
+                            <input type="text" name="City" class="city" required >
+                          </span>
+                      </div>
+                      <div class="btns">
+                        <button class="updatebtn">Update </button>
+                        <button class="nextbtn">Next </button>
+                      </div>
+                </div>
+
+                <div class="businesspage">
+                    <div class="nameEmail">
+                        <span class="data" id="Fullname">
+                            <label for="Businessname" class="Businessname">Business name:</label>
+                            <input type="text" name="Businessname" class="Businessname" required >
+                            <label for="Contactaddress" class="Contactaddress">Contact address:</label>
+                            <input type="text" name="Contactaddress" class="Contactaddress" required >
+                        </span>
+                        <span class="data">
+                          <label for="BusinessType" class="BusinessType">Type of business:</label>
+                          <input type="text" name="BusinessType" class="BusinessType" required >
+                            <label for="Email" >Email Address:</label>
+                            <input type="email" name="Email" required >
+                        </span>
+                      </div>
+  
+                      <div class="pass">
+                            <span class="data" id="pass">
+                              <label for="Service" class="Service">Service provided:</label>
+                              <input type="text" name="Service" class="Service" required >
+                              <label for="RegistrationNumber" class="RegistrationNumber">Business registration number:</label>
+                              <input type="text" name="RegistrationNumber" class="RegistrationNumber" required >
+                            </span>
+                            <span class="data">
+                              <label for="BusinessLocation" class="BusinessLocation">Business location:</label>
+                              <input type="text" name="BusinessLocation" class="BusinessLocation" required >
+                              <label for="Certificate" class="Certificate">Upload your business certificate:</label>
+                              <input type="text" name="Certificate" class="Certificate" placeholder="picture or document form" required >
+                            </span>
+                        </div>
+                        <div class="btns">
+                          <button class="updatebtn">Update </button>
+                          <button class="previousbtn"> Previous </button>
+                        </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="logout">
+            <button class="logoutbtn" style="color: rgb(236, 83, 109);
+            text-decoration: none; text-align: center;
+            padding: 10px;
+            padding-left: 35px;
+            padding-right: 35px;
+            border-radius: 20px;">Logout</button>
+        </div>
+        
+
+        <footer></footer>
+    </div>
+    
+
+    <!-- popup  -->
+
+    <div class="popscreen">
+        <div class="popup">
+            <p>Are you sure you want to log out?
+            </p>
+            <div class="btn">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="companyprofile.js"></script>
+</body>
+</html>

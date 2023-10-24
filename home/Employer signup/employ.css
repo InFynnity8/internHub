@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    width: fit-content;
 }
 
 
@@ -95,7 +96,7 @@ body{
     background: url(/asset/Layer\ -3.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 700px;
+    width: 690px;
     height: 490px;
     margin-top: 5px;
 }
@@ -103,7 +104,7 @@ body{
 .content  .forms{
     display: grid;
     justify-content: center;
-    width: 700px;
+    width: 600px;
     height: 600px;
 }
 

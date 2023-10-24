@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    width: fit-content;
 }
 
 
@@ -245,7 +246,6 @@ body{
     top: 130px;
     margin-left: 750px;
     margin-top: 0;
-    /* background: red; */
 }
 
 
@@ -256,21 +256,24 @@ body{
 .cards1{
     display: flex;
     justify-content: space-between;
+    width: fit-content;
 }
 
 .card{
     width: 600px;
     height: 450px;
     border: 1px solid rgb(77, 135, 242);
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
     display: flex;
     padding: 30px;
-    
 }
 
 .cards2{
     display: flex;
     justify-content: space-between;
+    width: fit-content;
 }
 
 
@@ -396,19 +399,21 @@ ul{
     display: flex;
     margin-bottom: 20px;
     line-height: 25px;
+    width: fit-content;
 }
 
 .aboutimg{
     background: url("/asset/aboutus.jpg");
     background-size: cover;
     width: 600px;
-    height: 550px;
+    height: auto;
 }
 
 .aboutcontent{
     width: 600px;
     height: 450px;
     margin-left: 40px;
+    height: fit-content;
 }
 
 .aboutbtnbox{
@@ -442,9 +447,19 @@ ul{
 
 /* our pricing */
 
+.priceheader{
+    display: flex;
+    color: rgb(77, 135, 242);
+    justify-content: center;
+    margin-top: 100px;
+    width: 1366px;
+}
+
+
 .servicesection{
     padding-left: 50px;
     padding-right: 50px;
+    width: 1365px;
 }
 
 .servicesection h3{
@@ -456,10 +471,11 @@ ul{
 }
 
 .servicecards{
+    width: fit-content;
     margin-top: 30px;
     display: flex;
-    justify-content: center
-    
+    justify-content: center;
+    margin-left: 130px;
 }
 
 
@@ -471,7 +487,6 @@ ul{
     margin-right: 50px;
     overflow: hidden;
     margin-bottom: 50px;
-    
 }
 
 .servicecards .title{
@@ -708,9 +723,9 @@ ul{
 /* messagesection */
 
 .messagesection{
-    width: 100%;
+    width: fit-content;
     height: 731px;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(9, 0, 93, 0.841);
     border-top: 1px solid rgb(77, 135, 242);
     background-image: url('/asset/people.png');
     background-repeat: none;
@@ -873,12 +888,14 @@ ul{
 }
 
 .conclude1{
+    padding-top: 8px;
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
+   
 
 }
 
@@ -900,6 +917,7 @@ ul{
     font-size: 15px;
     margin-bottom: 30px;
     margin-top: 10px;
+  
 }
 
 
@@ -910,5 +928,10 @@ ul{
     display: flex;
     justify-content: space-between;
     color: white;
-    padding-bottom: 15px;
+    padding-bottom: 7px;
+}
+
+.foot{
+    width: 100%;
+    background: rgba(77, 58, 249, 0.608);
 }

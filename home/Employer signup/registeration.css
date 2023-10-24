@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    width: fit-content;
 }
 
 
@@ -105,7 +106,7 @@ body{
     font-size: 45px;
     color: rgb(77, 135, 242);
     font-weight: 500;
-    width: 650px;
+    width: 640px;
    margin-bottom: 30px;
 }
 
@@ -234,7 +235,7 @@ form .right{
 .messagesection{
     width: 100%;
     height: 731px;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(9, 0, 93, 0.841);
     border-top: 1px solid rgb(77, 135, 242);
     background-image: url('/asset/people.png');
     background-repeat: none;
@@ -397,6 +398,7 @@ form .right{
 }
 
 .conclude1{
+    padding-top: 15px;
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
@@ -422,7 +424,7 @@ form .right{
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-top: 10px;
 }
 
@@ -435,6 +437,11 @@ form .right{
     justify-content: space-between;
     color: white;
     padding-bottom: 15px;
+}
+
+.foot{
+    width: 100%;
+    background: rgba(77, 58, 249, 0.608);
 }
 
 

@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: fit-content;
+}
+
+
+/* navigation bar */
+
+.navbar{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+    font-weight: 900;   
+}
+
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
+.logo:hover{
+   cursor: pointer;
+}
+
+.links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 50px;
+    padding-left: 250px;
+    font-size: 1.2em;
+    font-weight: 500;
+   
+}
+
+.links a{
+    margin-right: 10px;
+    width: 120px;
+    text-decoration: none;
+    margin-left: 0px;
+    color: rgb(77, 135, 242);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.links a::after{
+    content: '';
+    width: 120px;
+    height: 3px;
+    background: rgb(236, 83, 109);
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin:center;
+    transform: scaleX(0);
+    transition: transform .5s;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.chatbtn{
+    border: 1px solid rgb(77, 135, 242);
+    display: flex;
+    margin-left: 250px;
+    height: 30px;
+    width: 30px;
+    background: rgb(77, 135, 242);
+}
+
+.chatbtn:hover{
+    cursor: pointer;
+}
+
+.profilecontent{
+    background-image: url('/asset/businesspic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 104.3%;
+
+}
+
+footer{
+    position: relative;
+    background-image: linear-gradient(0deg, rgb(77, 135, 242),transparent);
+    height: 277px;
+    top: 350px;
+    z-index: 0;
+}
+
+.currentprofile{
+    position: absolute;
+    background: white;
+    width: 300px;
+    top: 120px;
+    left: 50px;
+    height: 450px;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.updateprofile{
+    position: absolute;
+    background: white;
+    width: 830px;
+    top: 120px;
+    left: 380px;
+    height: 450px;
+    z-index: 1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+
+.logout{
+    position: relative;
+    z-index: 1;
+    height: 0;
+}
+
+.logoutbtn{
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+    background: white;
+    margin-left: 1090px;
+    margin-top: 540px;
+}
+
+.logoutbtn:hover{
+    cursor: pointer;
+}
+
+.pic{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 180px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.pic p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.pic a{
+    color: rgb(77, 135, 242);
+    text-align: center;
+    font-size: 13px;
+}
+
+.profilepic{
+    margin-top: 20px;
+    height: 120px;
+    background: url('/asset/man1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.details{
+    margin-left: 40px;
+    font-size: 13px;
+}
+
+.details label{
+    color: rgb(77, 135, 242);
+}
+
+.details p{
+    margin-bottom: 7px;
+}
+
+
+/* updateprofile form */
+
+.header{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.header p{
+    color: rgb(77, 135, 242);
+}
+
+.header p:hover{
+    cursor: pointer;
+}
+
+.personaldetails{
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+.personaldetails.active{
+    opacity: .6;
+    font-size: 14px;
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.academicdetails{
+    opacity: .6;
+    font-size: 14px;
+}
+
+.academicdetails.active{
+    font-weight: 600;
+    opacity: 1;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.CoverLetter{
+    margin-right: 350px;
+}
+
+.summarybtn{
+    color: white;
+    font-size: 15px;
+    background: rgb(236, 75, 102);
+    border: none;
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 250px;
+}
+
+.summarybtn:hover{
+    cursor: pointer;
+}
+
+.btns{
+    margin-top: 70px;
+    display: flex;
+    justify-content: right;
+}
+
+.btns button{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.btns button:hover{
+    cursor: pointer;
+}
+
+.updatebtn{
+    color: white;
+    border: none;
+    background: rgb(77, 135, 242);
+    transition: .3s;
+}
+
+.updatebtn:hover{
+    background: rgb(28, 104, 245);
+}
+
+.nextbtn{
+    margin-left: 190px;
+    background: white;
+    border: 1px solid rgb(77, 135, 242);
+    color: rgb(77, 135, 242);
+    transition: 0.3s;
+}
+
+.nextbtn:hover{
+    background: rgb(28, 104, 245);
+    color: white;
+}
+
+.previousbtn{
+    margin-left: 190px;
+    background: white;
+    border: 1px solid rgb(77, 135, 242);
+    color: rgb(77, 135, 242);
+    transition: 0.3s;
+}
+
+.previousbtn:hover{
+    background: rgb(28, 104, 245);
+    color: white;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.personalpage{
+    transition: transform .2s ease;
+    transform: translateX(0);
+}
+
+.personalpage.active{
+    transform: translateX(-800px);
+}
+
+.academicpage{
+    transition: none;
+    position: absolute;
+    transform: translateX(800px);
+}
+
+.academicpage.active{
+    transition: transform .2s ease;
+    transform: translateX(0);
+}
+
+form .nameEmail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updateprofile label{
+    color: rgb(77, 135, 242);
+}
+
+#Fullname{
+    margin-right: 50px;
+}
+
+form input{
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    padding: 15px;
+    margin-top: 10px;
+    outline: none;
+    background: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#pass{
+    margin-right: 50px;
+}
+   
+
+
+form .pass{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+form .data{
+    display: grid;
+}
+
+form .signupbtn{
+    width: 130px;
+    height: 40px;
+    margin-left: 210px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background: rgb(77, 135, 242);
+    transition: 0.3s;
+}
+
+form .signupbtn:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+}
+
+
+
+/* popup */
+
+.popscreen{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(146, 146, 146, 0.52);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: .5s;
+    z-index: 2;
+ 
+}
+
+.popscreen.action{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(146, 146, 146, 0.52);
+    width: 100%;
+    height: 707px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.popup{
+    border: 1px solid rgb(77, 135, 242);
+    height: 150px;
+    background: white;
+    border-radius: 7px;
+    width: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.popup p{
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.yes{
+    background: white;
+    color: rgb(77, 135, 242);
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.yes:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+    color: white;
+}
+
+
+.no{
+    margin-left: 10px;
+    background: rgb(77, 135, 242);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.no:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+}

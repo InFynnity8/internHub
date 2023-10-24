@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    width: fit-content;
 }
 
 
@@ -305,6 +306,7 @@ h3{
     border: 1px solid rgb(77, 135, 242);
     height: 530px;
     width: 700px;
+    margin-left: 116px;
 }
 
 
@@ -312,7 +314,6 @@ h3{
 
 footer{
     background: rgb(28, 104, 245);
-  
 }
 
 .conclude1{

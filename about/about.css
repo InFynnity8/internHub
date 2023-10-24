@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    width: fit-content;
 }
 
 
@@ -494,10 +495,10 @@ h6{
 /* messagesection */
 
 .messagesection{
-    width: 100%;
+    width: fit-content;
     height: 731px;
+    background-color: rgba(9, 0, 93, 0.841);
     border-top: 1px solid rgb(77, 135, 242);
-    background-color: rgba(0, 0, 0, .7);
     background-image: url('/asset/people.png');
     background-repeat: none;
     background-size: cover;
@@ -655,12 +656,14 @@ h6{
 }
 
 .conclude1{
+    padding-top: 8px;
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
+   
 
 }
 
@@ -682,6 +685,7 @@ h6{
     font-size: 15px;
     margin-bottom: 30px;
     margin-top: 10px;
+   
 }
 
 
@@ -692,7 +696,12 @@ h6{
     display: flex;
     justify-content: space-between;
     color: white;
-    padding-bottom: 15px;
+    padding-bottom: 7px;
+}
+
+.foot{
+    width: 100%;
+    background: rgba(77, 58, 249, 0.608);
 }
 
 

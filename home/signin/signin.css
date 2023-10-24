@@ -5,6 +5,7 @@
 }
 
 body{
+    width: fit-content;
     font-family: sans-serif;
 }
 
@@ -274,11 +275,11 @@ form .signupbtn:hover{
 }
 
 .alt button{
-    width: 300px;
+    width: 250px;
     height: 37px;
     margin-bottom: 10px;
     border-radius: 20px;
-    margin-left: 170px;
+    margin-left: 180px;
     display: flex;
     align-items: center;
     padding-left: 5px;
