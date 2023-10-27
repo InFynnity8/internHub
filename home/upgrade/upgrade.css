@@ -140,9 +140,10 @@ body{
     background: rgb(236, 83, 109);
     transform: scale(0);
     border-radius: 50%;
+    transition: transform .2s ease;
 }
 
-.bubble.active{
+.bubble3.active{
     height: 7px;
     width: 7px;
     transform: scale(1);
@@ -164,6 +165,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 1200px;
+
 }
 
 .maincontent .heading{
@@ -182,7 +184,7 @@ body{
 .slider{
     display: flex;
     width: 650px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .packageupgrage1{
@@ -210,14 +212,108 @@ body{
     transform: translateX(-580px);
 }
 
-.packageupgrade3{
-    background: red;
-    height: 500px;
-    width: 580px;
-    padding-top: 60px;
-    transform: translateX(-400px);
+.packageupgrage2.action2{
     transition: transform .2s ease;
-    /* display: none; */
+    transform: translateX(-1920px);
+}
+
+.packageupgrade3{
+    height: 440px;
+    min-width: 630px;
+    padding-top: 60px;
+    transform: translateX(-480px);
+    transition: transform .2s ease;
+}
+
+.packageupgrade3.action{
+    transform: translateX(-1140px);
+}
+
+.packageupgrade3 .topic{
+    color: rgb(62, 184, 10);
+    font-size: 22px;
+    margin-bottom: 27px;
+    margin-left: 50px;
+} 
+
+.packageupgrade3 .subtopic{
+    color: rgb(56, 121, 242);
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+} 
+
+.packageupgrade3 i{
+    position: absolute;
+    color: rgb(62, 184, 10);
+    font-size: 60px;
+    top: 40px;
+    right: 540px;
+}
+
+.packageupgrade3 p{
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+}
+
+.paymentsummary{
+    display: flex;
+    width: 610px;
+    height: 185px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(238, 232, 232);
+    box-shadow: 3px 3px 4px 1px rgb(192, 190, 190);
+}
+
+.elements{
+    width: 230px;
+    height: 185px;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    color: rgb(93, 92, 92);
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.elements p{
+    color: rgb(79, 78, 78);
+    
+}
+
+.values{
+    height: 185px;
+    width: 230px;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.values p{
+    color: black;
+    font-weight: 500;    
+}
+
+.donebtn{
+    height: 40px;
+    width: 200px;
+    margin-left: 410px;
+    border: none;
+    background: rgb(30, 101, 233);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.donebtn:hover{
+    cursor: pointer;
+    background: rgb(53, 97, 180);
 }
 
 .package{
@@ -247,6 +343,42 @@ body{
     cursor: pointer;
 }
 
+.payments{
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    transition: transform .2s ease;
+}
+
+.payments.active{
+    transform: translateX(-670px);
+}
+
+
+.payment1{
+    width: 580px;
+}
+
+.payment2{
+    width: 580px;
+}
+
+.payment1 i{
+    font-size: 30px;
+    color:rgb(77, 135, 242);
+    position: absolute;
+    left: 20px;
+    top: 120px;
+}
+
+.payment2 i{
+    font-size: 30px;
+    color:rgb(77, 135, 242);
+    position: absolute;
+    left: 690px;
+    top: -7px;
+}
+
 
 .moneydiv{
     color: black;
@@ -264,6 +396,7 @@ body{
 
 .card{
     cursor: pointer;
+    margin-right: 35px;
 }
 
 .momo{
@@ -271,8 +404,38 @@ body{
     cursor: pointer;
 }
 
+.card2{
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.momo2{
+    margin-left: 200px;
+    cursor: pointer;
+}
+
 .entry{
     display: grid;
+}
+
+.entry2{
+    display: grid;
+}
+
+.entry2 label{
+    font-size: 13px;
+    color: rgb(132, 132, 132);
+    margin-bottom: 5px;
+}
+
+.entry2 input{
+    width: 180px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 10px;
 }
 
 .entry input{
@@ -294,9 +457,15 @@ body{
     width: 230px;
 }
 
+.card2{
+    color: rgb(77, 135, 242);
+}
 
+#momo2{
+    color: rgb(77, 135, 242);
+}
 
-.packageupgrage2 label{
+.payment1 label{
     color: rgb(77, 135, 242);
 }
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upgrade</title>
     <link rel="stylesheet" href="upgrade.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="/asset/layer.ico">
 </head>
 <body>
@@ -77,27 +78,57 @@
                 <form class="packageupgrage2">
                     <p class="heading">Please select your preferred Payment method</p>
 
-                    <div class="payment">
-                        <input type="radio" name="paymentMethod" class="card">
-                        <label for="paymentMethod">Debit Card</label>
+                    <div class="payments">
+                     <!-- pay by debit card -->
 
-                        
-                        <input type="radio" name="paymentMethod" class="momo">
-                        <label for="paymentMethod">Mobile Money</label>
-                        
-                        <p class="heading2">Payment Details</p>
+                        <div class="payment1">
+                            <input type="radio" name="paymentMethod1" class="card" checked>
+                            <i class='bx bxs-credit-card'></i> <label for="paymentMethod1"> Debit Card</label>
 
-                        <div class="entry">
 
-                            <input type="text" placeholder="Cardholder Name" required>
-                            <input type="text" placeholder="Card Number" required>
-                            <div class="expiry">
-                                <input type="text" placeholder="Expiration Date" required><input type="text" placeholder="CVV Code" required>
+                            <input type="radio" name="paymentMethod1" class="momo">
+                            <label for="paymentMethod1">Mobile Money</label>
+
+                            <p class="heading2">Payment Details</p>
+
+        
+                                <div class="entry">
+
+                                    <input type="text" placeholder="Cardholder Name" required>
+                                    <input type="text" placeholder="Card Number" required>
+                                    <div class="expiry">
+                                        <input type="text" placeholder="Expiration Date" required><input type="text" placeholder="CVV Code" required>
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+
+
+                        <!-- pay by mobile money -->
+
+                        <div class="payment2">
+                            <input type="radio" name="paymentMethod2" class="card2">
+                            <i class='bx bxs-credit-card'></i><label for="paymentMethod2" class="card2">  Debit Card</label>
+
+
+                            <input type="radio" name="paymentMethod2" class="momo2" checked>
+                            <label for="paymentMethod2" id="momo2">Mobile Money</label>
+
+                            <p class="heading2">Payment Details</p>
+
+                            <div class="entry2">
+                                <label for="network">Select Network</label>
+                                <input type="text" required>
+
+                                <label for="number">Number</label>
+                                <input type="text" required>
+
                             </div>
 
                         </div>
-                        
                     </div>
+
                     <div class="btns">
                         <button class="backbtn">Back</button>
                         <button class="continuebtn2">Continue</button>
@@ -108,11 +139,25 @@
                 <!-- confirmation section -->
 
                 <div class="packageupgrade3">
-                    <p class="topic">Payment confirmed</p>
+                    <i class='bx bxs-check-circle'></i><p class="topic">Payment confirmed</p>
                     <p>Thank you, your payment has been successful and your account will be upgraded soon.
                         A confirmation email has been sent to internhub@email.com</p>
                     <p class="subtopic">Payment Summary</p>
                     <div class="paymentsummary">
+                        <div class="elements">
+                            <p>Package:</p>
+                            <p>Payment Mode:</p>
+                            <p>Number:</p>
+                            <p>Amount Paid:</p>
+                            <p>Total Price:</p>
+                        </div>
+                        <div class="values">
+                            <p>Standard</p>
+                            <p>Mobile Money</p>
+                            <p>#####</p>
+                            <p>GHC ***</p>
+                            <p>GHC ***</p>
+                        </div>
 
                     </div>
                     <button class="donebtn">Done</button>
@@ -128,5 +173,7 @@
     </div>
 
     <script src="upgrade.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"> </script>
+</body>
 </body>
 </html>
