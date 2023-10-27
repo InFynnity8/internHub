@@ -6,6 +6,7 @@
     <title>Profile</title>
     <link rel="icon" type="image/x-icon" href="/asset/layer.ico">
     <link rel="stylesheet" href="profile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="navbar">
@@ -35,7 +36,10 @@
                 </div>
                 <div>
                     <p>Basic Package</p>
-                    <a href="">upgrade package</a>
+                    <a href="/home/upgrade/upgrade.html">upgrade package</a>
+                    <i class='bx bx-info-circle'
+                    style="color:rgb(77, 135, 242);
+                    font-size: 13px;"></i>
                 </div>
             </div>
 
@@ -87,15 +91,33 @@
                           <span class="data" id="pass">
                             <label for="Region" class="Region">Region:</label>
                             <input type="text" name="Region" class="Region" required >
+                            <i class='bx bx-chevron-down'
+                            style="position: absolute;
+                            left: 310px;
+                            bottom: 110px;
+                            color: rgb(77, 135, 242);
+                            font-size: 35px;
+                            cursor: pointer;"></i>
                           </span>
                           <span class="data">
                             <label for="City" class="City">City or Town:</label>
                             <input type="text" name="City" class="City" required >
+                            <i class='bx bx-chevron-down'
+                            style="position: absolute;
+                            left: 710px;
+                            bottom: 110px;
+                            color: rgb(77, 135, 242);
+                            font-size: 35px;
+                            cursor: pointer;"></i>
                           </span>
                       </div>
                       <div class="btns">
                         <button class="updatebtn">Update </button>
-                        <button class="nextbtn">Next </button>
+                        <button class="nextbtn" style="padding-right: 15px;">Next <i class='bx bx-chevron-right'
+                            style="font-size: 28px;
+                            position: absolute;
+                            bottom: 2px;
+                            right: 25px;"></i></button>
                       </div>
                 </div>
 
@@ -103,27 +125,55 @@
                     <div class="nameEmail">
                       <span class="data" id="Fullname">
                           <label for="University" class="University">University:</label>
-                          <input type="text" name="University" class="University" required >
+                          <input type="text" name="University" class="University" required ><i class='bx bx-chevron-down'
+                          style="position: absolute;
+                          color: rgb(77, 135, 242);
+                          font-size: 35px;
+                          left: 310px;
+                          top: 28px;
+                          cursor: pointer;"></i>
                           <label for="Program" class="Program">Program:</label>
                           <input type="text" name="Program" class="Program" required >
                       </span>
                       <span class="data">
                         <label for="Level" class="Level">Level:</label>
-                        <input type="text" name="Level" class="Level" required >
+                        <input type="text" name="Level" class="Level" required ><i class='bx bx-chevron-down'
+                        style="position: absolute;
+                        color: rgb(77, 135, 242);
+                        font-size: 35px;
+                        left: 710px;
+                        top: 28px;
+                        cursor: pointer;"></i>
                           <label for="CV" >Upload your CV or Resume:</label>
-                          <input type="text" name="CV" required placeholder="filename.jpeg" required>  
+                          <input type="text" name="CV" required placeholder="filename.jpeg" required><i class='bx bxs-camera-plus'
+                          style="color: rgb(77, 135, 242);
+                          font-size: 20px;
+                          position: absolute;
+                          right: 20px;
+                          top: 108px;
+                          cursor: pointer;"></i>
                       </span>
                     </div>
 
                     <div class="pass">
                           <span class="data" id="pass">
                             <label for="CoverLetter" class="CoverLetter">Upload your Cover or Internship Letter:</label>
-                            <input type="text" name="CoverLetter" class="CoverLetter"  placeholder="filename.pdf" required >
+                            <input type="text" name="CoverLetter" class="CoverLetter"  placeholder="filename.pdf" required ><i class='bx bxs-file-export'
+                            style="color: rgb(77, 135, 242);
+                            font-size: 20px;
+                            position: absolute;
+                            right: 420px;
+                            top: 180px;
+                            cursor: pointer;"></i>
                           </span>
                       </div>
                       <div class="btns">
                         <button class="updatebtn">Update </button>
-                        <button class="previousbtn">Previous</button>
+                        <button class="previousbtn" style="padding-left: 10px;"><i class='bx bx-chevron-left'
+                            style="font-size: 28px;
+                            position: absolute;
+                            bottom: 2px;
+                            right: 80px;"></i>Previous</button>
                       </div>
                 </div>
             </form>
@@ -134,8 +184,14 @@
             text-decoration: none; text-align: center;
             padding: 10px;
             padding-left: 35px;
-            padding-right: 35px;
-            border-radius: 20px;">Logout</button>
+            padding-right: 25px;
+            padding-top: 8px;
+            border-radius: 20px;
+            font-size: 16px;"> <i class='bx bx-log-out'
+            style="position: absolute;
+            font-size: 25px;
+            right: 240px;
+            top: 545px;"></i> Logout</button>
         </div>
         
 
@@ -158,5 +214,6 @@
     </div>
 
     <script src="profile.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"> </script>
 </body>
 </html>

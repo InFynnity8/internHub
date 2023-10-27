@@ -427,7 +427,7 @@ form .signupbtn:hover{
     bottom: 0;
     right: 0;
     background: rgba(146, 146, 146, 0.52);
-    width: 100%;
+    width: fit-content;
     height: 100vh;
     display: flex;
     justify-content: center;

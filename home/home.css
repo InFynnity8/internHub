@@ -725,7 +725,7 @@ ul{
 .messagesection{
     width: fit-content;
     height: 731px;
-    background-color: rgba(9, 0, 93, 0.841);
+    background-color: rgb(14, 66, 164);
     border-top: 1px solid rgb(77, 135, 242);
     background-image: url('/asset/people.png');
     background-repeat: none;

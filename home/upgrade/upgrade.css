@@ -230,7 +230,7 @@ body{
 }
 
 .packageupgrade3 .topic{
-    color: rgb(62, 184, 10);
+    color: rgb(50, 158, 3);
     font-size: 22px;
     margin-bottom: 27px;
     margin-left: 50px;
@@ -245,7 +245,7 @@ body{
 
 .packageupgrade3 i{
     position: absolute;
-    color: rgb(62, 184, 10);
+    color: rgb(50, 158, 3);
     font-size: 60px;
     top: 40px;
     right: 590px;
@@ -410,7 +410,7 @@ body{
 }
 
 .momo2{
-    margin-left: 200px;
+    margin-left:180px;
     cursor: pointer;
 }
 
@@ -528,7 +528,7 @@ body{
 }
 
 .imagesection{
-    /* background: yellow; */
+    /* background: rgb(0, 153, 255); */
     height: 500px;
     width: 500px;
     z-index: -1;

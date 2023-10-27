@@ -6,6 +6,7 @@
     <title>Profile | Employer</title>
     <link rel="icon" type="image/x-icon" href="/asset/layer.ico">
     <link rel="stylesheet" href="companyprofile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="navbar">
@@ -35,7 +36,10 @@
                 </div>
                 <div>
                     <p>Basic Package</p>
-                    <a href="">Request Summary</a>
+                    <a href="">Request Summary</a><i class='bx bxs-bell' 
+                    style="color: rgb(77, 135, 242);
+                    font-size: 18px;
+                    margin-left: 3px;"></i>
                 </div>
             </div>
 
@@ -87,15 +91,33 @@
                           <span class="data" id="pass">
                             <label for="Region" class="Region">Region:</label>
                             <input type="text" name="Region" class="region" required >
+                            <i class='bx bx-chevron-down'
+                            style="position: absolute;
+                            left: 310px;
+                            bottom: 112px;
+                            color: rgb(77, 135, 242);
+                            font-size: 35px;
+                            cursor: pointer;"></i>
                           </span>
                           <span class="data">
                             <label for="City" class="City">City or Town:</label>
                             <input type="text" name="City" class="city" required >
+                            <i class='bx bx-chevron-down'
+                            style="position: absolute;
+                            left: 710px;
+                            bottom: 112px;
+                            color: rgb(77, 135, 242);
+                            font-size: 35px;
+                            cursor: pointer;"></i>
                           </span>
                       </div>
                       <div class="btns">
                         <button class="updatebtn">Update </button>
-                        <button class="nextbtn">Next </button>
+                        <button class="nextbtn" style="padding-right: 15px;">Next <i class='bx bx-chevron-right'
+                            style="font-size: 28px;
+                            position: absolute;
+                            bottom: 2px;
+                            right: 25px;"></i></button>
                       </div>
                 </div>
 
@@ -118,7 +140,13 @@
                       <div class="pass">
                             <span class="data" id="pass">
                               <label for="Service" class="Service">Service provided:</label>
-                              <input type="text" name="Service" class="Service" required >
+                              <input type="text" name="Service" class="Service" required ><i class='bx bx-chevron-down'
+                              style="color: rgb(77, 135, 242);
+                              font-size: 35px;
+                              position: absolute;
+                              left: 308px;
+                              bottom: 113px;
+                              cursor: pointer;"></i>
                               <label for="RegistrationNumber" class="RegistrationNumber">Business registration number:</label>
                               <input type="text" name="RegistrationNumber" class="RegistrationNumber" required >
                             </span>
@@ -127,11 +155,22 @@
                               <input type="text" name="BusinessLocation" class="BusinessLocation" required >
                               <label for="Certificate" class="Certificate">Upload your business certificate:</label>
                               <input type="text" name="Certificate" class="Certificate" placeholder="picture or document form" required >
+                              <i class='bx bxs-file-export'
+                            style="color: rgb(77, 135, 242);
+                            font-size: 20px;
+                            position: absolute;
+                            right: 20px;
+                            top: 253px;
+                            cursor: pointer;"></i>
                             </span>
                         </div>
                         <div class="btns">
                           <button class="updatebtn">Update </button>
-                          <button class="previousbtn"> Previous </button>
+                          <button class="previousbtn" style="padding-left: 10px;"><i class='bx bx-chevron-left'
+                            style="font-size: 28px;
+                            position: absolute;
+                            bottom: 2px;
+                            right: 80px;"></i>Previous</button>
                         </div>
                 </div>
             </form>
@@ -141,9 +180,15 @@
             <button class="logoutbtn" style="color: rgb(236, 83, 109);
             text-decoration: none; text-align: center;
             padding: 10px;
+            padding-top: 8px;
             padding-left: 35px;
-            padding-right: 35px;
-            border-radius: 20px;">Logout</button>
+            padding-right: 25px;
+            border-radius: 20px;
+            font-size: 16px;"> <i class='bx bx-log-out'
+            style="position: absolute;
+            font-size: 25px;
+            right: 240px;
+            top: 545px;"></i>Logout</button>
         </div>
         
 
