@@ -67,7 +67,13 @@
             <div class="header">
                 <p class="personaldetails">Personal Details</p>
                 <p class="businessdetails">Business Details</p>
-                <button class="requestbtn">Request for intern</button>
+                <button class="requestbtn"> <a href="/home/Employer signup/registeration.html"
+                    style="text-decoration: none;
+                    color: white;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    padding-left: 25px;
+                    padding-right: 25px;"> Request for intern</a></button>
             </div>
 
             <form action="#">
@@ -90,25 +96,31 @@
                     <div class="pass">
                           <span class="data" id="pass">
                             <label for="Region" class="Region">Region:</label>
-                            <input type="text" name="Region" class="region" required >
-                            <i class='bx bx-chevron-down'
-                            style="position: absolute;
-                            left: 310px;
-                            bottom: 112px;
-                            color: rgb(77, 135, 242);
-                            font-size: 35px;
-                            cursor: pointer;"></i>
+                            <div class="regional">
+                            <select name="Region" id="region" required>
+                                <option value="N/A" style="color: rgb(35, 99, 194);"></option>
+                                <option value="Ahafo">Ahafo</option>
+                                <option value="Ashanti">Ashanti </option>
+                                <option value="Bono East">Bono East </option>
+                                <option value="Brong Ahafo">Brong Ahafo</option>
+                                <option value="Central"> Central</option>
+                                <option value="Eastern">Eastern </option>
+                                <option value="Greater Accra">Greater Accra </option>
+                                <option value="North East"> North East</option>
+                                <option value="Northern">Northern </option>
+                                <option value="Oti"> Oti</option>
+                                <option value="Savannah">Savannah </option>
+                                <option value="Upper East">Upper East </option>
+                                <option value="Upper West">Upper West</option>
+                                <option value="Western">Western </option>
+                                <option value="Western North">Western North </option>
+                                <option value="Volta">Volta </option>
+                            </select>
+                            </div>
                           </span>
                           <span class="data">
                             <label for="City" class="City">City or Town:</label>
                             <input type="text" name="City" class="city" required >
-                            <i class='bx bx-chevron-down'
-                            style="position: absolute;
-                            left: 710px;
-                            bottom: 112px;
-                            color: rgb(77, 135, 242);
-                            font-size: 35px;
-                            cursor: pointer;"></i>
                           </span>
                       </div>
                       <div class="btns">
@@ -120,6 +132,8 @@
                             right: 25px;"></i></button>
                       </div>
                 </div>
+
+                <!-- business details -->
 
                 <div class="businesspage">
                     <div class="nameEmail">
@@ -154,14 +168,31 @@
                               <label for="BusinessLocation" class="BusinessLocation">Business location:</label>
                               <input type="text" name="BusinessLocation" class="BusinessLocation" required >
                               <label for="Certificate" class="Certificate">Upload your business certificate:</label>
-                              <input type="text" name="Certificate" class="Certificate" placeholder="picture or document form" required >
-                              <i class='bx bxs-file-export'
+                              <div class="cert">
+                                 <div class="inner">
+                                 <input type="file" name="Certificate" class="Certificate" placeholder="picture or document form" 
+                                 style=" 
+                                 width: 475px;
+                                 margin-top: -10px;
+                                 margin-left: -111px;
+                                 border: none;
+                                 padding-bottom: 30px;
+                                 background: transparent;
+                                 padding-right: 100px;  
+                                 
+                                " required >
+                                 </div>
+                               </div>
+
+                              <i class='bx bxs-file-export' 
                             style="color: rgb(77, 135, 242);
                             font-size: 20px;
                             position: absolute;
                             right: 20px;
-                            top: 253px;
+                            top: 250px;
                             cursor: pointer;"></i>
+
+        
                             </span>
                         </div>
                         <div class="btns">
@@ -180,15 +211,16 @@
             <button class="logoutbtn" style="color: rgb(236, 83, 109);
             text-decoration: none; text-align: center;
             padding: 10px;
-            padding-top: 8px;
             padding-left: 35px;
             padding-right: 25px;
+            padding-top: 8px;
             border-radius: 20px;
-            font-size: 16px;"> <i class='bx bx-log-out'
-            style="position: absolute;
+            font-size: 16px;
+            "> Logout<i class='bx bx-log-out'
+            style="position: relative;
             font-size: 25px;
-            right: 240px;
-            top: 545px;"></i>Logout</button>
+            right: 43px;
+            top: -20px;"></i> </button>
         </div>
         
 

@@ -7,6 +7,7 @@
 body{
     width: fit-content;
     font-family: sans-serif;
+
 }
 
 
@@ -187,8 +188,6 @@ form input{
     background: white;
     font-size: 18px;
 }
-
-
  
 
 
@@ -197,11 +196,12 @@ form .pass{
 }
 
 .pass .eye{
-    position: absolute;
+    position: relative;
     color: black;
-    right: 260px;
-    top: 270px;
+    right: -365px;
+    top: -30px;
     font-size: 20px;
+    
 }
 
 .pass .eye{
@@ -220,7 +220,7 @@ form .data{
 form .signupbtn{
     width: 130px;
     height: 40px;
-    margin-left: 130px;
+    margin-left: 135px;
     border-radius: 30px;
     border: none;
     color: white;
@@ -279,7 +279,7 @@ form .signupbtn:hover{
     height: 37px;
     margin-bottom: 10px;
     border-radius: 20px;
-    margin-left: 180px;
+    margin-left: 170px;
     display: flex;
     align-items: center;
     padding-left: 5px;

@@ -98,7 +98,7 @@
                                     <input type="text" placeholder="Card Number" required> <img src="/asset/visa.png" width="30px" height="25px" alt=""
                                     style="position: absolute;
                                     left: 535px;
-                                    top: 270px;">
+                                    top: 265px;">
                                     <div class="expiry">
                                         <input type="text" placeholder="Expiration Date" required><input type="text" placeholder="CVV Code" required>
                                     </div>
@@ -127,14 +127,13 @@
 
                             <div class="entry2">
                                 <label for="network">Select Network</label>
-                                <input type="text" required><i class='bx bx-chevron-down'
-                                style="position: absolute;
-                                color: rgb(102, 102, 103);
-                                font-size: 30px;
-                                left: 820px;
-                                top: 116px;
-                                cursor: pointer;"></i>
-
+                                <div class="net">
+                                <select name="network" id="network">
+                                    <option value="MTN">MTN</option>
+                                    <option value="Vodafone">Vodafone</option>
+                                    <option value="AT">at</option>
+                                </select>
+                                </div>
                                 <label for="number">Number</label>
                                 <input type="text" required>
 

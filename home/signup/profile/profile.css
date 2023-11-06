@@ -7,6 +7,7 @@
 body{
     font-family: sans-serif;
     width: fit-content;
+
 }
 
 
@@ -15,7 +16,7 @@ body{
 .navbar{
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 1349px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -108,8 +109,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
-    width: 104.3%;
+    height: 627px;
+    width: 100%;
 
 }
 
@@ -253,7 +254,7 @@ footer{
     font-weight: 600;
     opacity: 1;
     font-size: 15px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .CoverLetter{
@@ -383,6 +384,94 @@ form input{
     margin-bottom: 10px;
 }
 
+form select{
+    margin-top: -1px;
+    border: none;
+    border-radius: 30px;
+    height: 35px;
+    width: 340px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 15px;
+    margin-left: -16px;
+    background: transparent;
+}
+
+.resume{
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    overflow: hidden;
+    margin-top: 10px;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.cert{
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    overflow: hidden;
+    margin-top: 10px;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: -90px;
+}
+
+.inner{
+    border: none;
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    overflow: hidden;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-left: 12px;
+}
+
+form .regional{
+    margin-top: 11px;
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+form .uni{
+    margin-top: 11px;
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+form .level{
+    margin-top: 11px;
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
 #pass{
     margin-right: 50px;
 }
@@ -445,7 +534,7 @@ form .signupbtn:hover{
     bottom: 0;
     right: 0;
     background: rgba(146, 146, 146, 0.52);
-    width: 100%;
+    width: 1349px;
     height: 707px;
     display: flex;
     justify-content: center;

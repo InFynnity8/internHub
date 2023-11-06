@@ -438,6 +438,29 @@ body{
     padding-left: 10px;
 }
 
+.entry2 select{
+    width: 175px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: -1px;
+    margin-left: -1px;
+    background: transparent;
+}
+
+.entry2 .net{
+    width: 180px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+   
+}
+
 .entry input{
     border: none;
     border-bottom: 1px solid rgb(169, 169, 169);
