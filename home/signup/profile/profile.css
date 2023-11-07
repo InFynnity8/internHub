@@ -92,16 +92,36 @@ body{
 }
 
 .chatbtn{
-    border: 1px solid rgb(77, 135, 242);
     display: flex;
-    margin-left: 250px;
+    margin-left: 200px;
     height: 30px;
     width: 30px;
-    background: rgb(77, 135, 242);
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbtn i{
+    font-size: 40px;
 }
 
 .chatbtn:hover{
     cursor: pointer;
+}
+
+.changepic{
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    background: rgb(77, 135, 242);
+    top: 90px;
+    left: 90px;
 }
 
 .profilecontent{

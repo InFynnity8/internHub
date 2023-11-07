@@ -553,8 +553,12 @@ body{
 }
 
 .imagesection{
-    /* background: rgb(0, 153, 255); */
+    background: url('/asset/completed.jpg');
+    background-size: contain;
     height: 500px;
     width: 500px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     z-index: -1;
 }

@@ -430,7 +430,7 @@ body{
 .members .card .image1{
     width: 280px;
     height: 260px;
-    background: url(/asset/man1.webp);
+    background: url(/asset/lead2.jpg);
     background-size: cover;
     background-position: absolute;
     
@@ -439,7 +439,7 @@ body{
 .members .card .image2{
     width: 280px;
     height: 260px;
-    background: url(/asset/man2.avif);
+    background: url(/asset/lead3.jpg);
     background-size: cover;
 }
 
@@ -447,14 +447,14 @@ body{
 .members .card .image3{
     width: 280px;
     height: 260px;
-    background: url(/asset/man3.jpeg);
+    background: url(/asset/lead1.jpg);
     background-size: cover;
 }
 
 .members .card .image4{
     width: 280px;
     height: 260px;
-    background: url(/asset/woman.jpg);
+    background: url(/asset/lead4.jpg);
     background-size: cover;
 }
 
