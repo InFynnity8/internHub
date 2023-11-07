@@ -560,6 +560,20 @@ form .signupbtn:hover{
 }
 
 
+.yes a{
+    color: rgb(77, 135, 242); 
+    text-decoration: none;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    transition: .3s;
+}
+
+.yes a:hover{
+    color: white;
+}
+
 .no{
     margin-left: 10px;
     background: rgb(77, 135, 242);

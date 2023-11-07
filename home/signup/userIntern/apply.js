@@ -1,16 +1,15 @@
 applyButton = document.querySelector('.applybtn')
 backButton = document.querySelector('.backbtn')
 yesButton = document.querySelector('.yes')
-noButton = document.querySelector('.no')
+const noButton = document.querySelector('.no')
 popup = document.querySelector('.popscreen')
 popupBox = document.querySelector('.popup')
-inviteButton = document.querySelector('.invite')
-closeButton = document.querySelector('.close')
+const inviteButton = document.querySelector('.invite')
+const closeButton = document.querySelector('.close')
 
 applyButton.addEventListener('click', ()=>{
     popup.classList.add('action');
 })
-
 
 
 inviteButton.addEventListener('click', ()=>{
@@ -23,9 +22,10 @@ closeButton.addEventListener('click', ()=>{
 
 })
 
-backButton.addEventListener('click', ()=>{back()})
-
 noButton.addEventListener('click', ()=>{
     popup.classList.remove('action');
 
 })
+
+
+
