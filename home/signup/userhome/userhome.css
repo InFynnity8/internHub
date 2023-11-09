@@ -83,71 +83,31 @@ body{
     transform: scaleX(1);
 }
 
-.navbtns{
+.profile{
+    margin-left: 100px;
     display: flex;
-    justify-content: right;
     align-items: center;
+    justify-content: space-between;
+    width: 160px;
 }
 
-.navbtn1{
-    font-size: 0.8em;
+.profilepic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('/asset/lead1.jpg');
+    background-size: contain;
+}
+
+.greetings{
     color: rgb(77, 135, 242);
-    border: 1px solid rgb(77, 135, 242);
-    border-radius: 8px;
-    background: transparent;
-    height: 35px;
-    width: 170px;
-    transition: .5s;
+    font-weight: 600;
 }
 
-.navbtn1 a{
-    text-decoration: none;
-    color: rgb(77, 135, 242);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 37px;
-    padding-right: 37px;
-    transition: .5s;
+.profile .comp{
+     color: rgb(80, 80, 80);
+     font-size: 12px;
 }
-
-.navbtn1 a:hover{
-    color: white;
-}
-
-.navbtn1:hover{
-    cursor: pointer;
-    color: white;
-    background: rgb(77, 135, 242);
-}
-
-.navbtn2{
-    color: white;
-    border: 1px solid rgb(77, 135, 242);
-    background: rgb(77, 135, 242);
-    border-radius: 8px;
-    width: 151px;
-    height: 35px;
-    border: none;
-    margin-left: 10px;
-    font-size: 0.8em;
-    transition: .3s;
- 
-}
-
-.navbtn2:hover{
-    cursor: pointer;
-    background: rgb(28, 104, 245);
-}
-
-.navbtn2 a{
-    text-decoration: none;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 34px;
-    padding-right: 34px;
-}
-
 
 
 /* introduction */

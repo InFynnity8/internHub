@@ -218,11 +218,16 @@ body{
 }
 
 ul li{
-   
+    transition:  .1s; 
     height: 100px;
     display: flex;
     align-items: center;
     padding-left: 30px;
+}
+
+ul li:hover{
+    cursor: pointer;
+    background: rgba(153, 153, 153, 0.13);
 }
 
 ul li .dp{
@@ -291,6 +296,70 @@ ul li .description .status{
     border-radius: 50%;
     border: 1px solid rgb(153, 153, 153);
     background: transparent;
+    display: flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: rgb(153, 153, 153);
 }
+
+.chat-space{
+    height: 400px;
+}
+
+.message-area{
+    border-top: 1px solid rgb(153, 153, 153);
+}
+
+.typing-area{
+    display: flex;
+    align-items: start;
+}
+
+.ri-attachment-line{
+    color: rgb(153, 153, 153);
+    font-size: 25px;
+    transform: rotate(45deg);
+    padding: 10px;
+}
+
+.bx.bx-smile{
+    color: rgb(153, 153, 153);
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+textarea{
+    border: none;
+    width: 800px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    outline: none;
+    resize: none;
+}
+
+.typing-area button{
+    border-radius: 50%;
+    background: white;
+    border: none;
+    color: rgb(77, 135, 242);
+    box-shadow: -1px 1px 3px rgb(77, 135, 242);
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.typing-area button:hover{
+    cursor: pointer;
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 3px rgb(77, 135, 242);
+}
+

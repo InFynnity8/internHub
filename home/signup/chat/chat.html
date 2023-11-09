@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <link rel="stylesheet" href="chat.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="/asset/layer.ico">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -47,8 +48,8 @@
                 <div class="search-section">
                     <p class="chat">Chats</p>
                     <form action="#">
-                        <input type="text" name="search">
-                        <button type="submit"><i class="ri-search-line"></i></button>
+                        <input type="search" name="search" placeholder="Search...">
+                        <button type="submit"><i class="ri-search-line" title="search"></i></button>
                     </form>
                     <div>
                         <p>17 Chats</p> 
@@ -172,12 +173,20 @@
                         color: rgb(134, 133, 133);">Computer Science, KNUST</p>
                     </div>
                 </div>
-                <button class="options"></button>
+                <button class="options" title="options">...</button>
             </div>
 
             <div class="chat-space"></div>
 
-            <div class="message-area"></div>
+            <div class="message-area">
+                <div class="typing-area">
+                    <i class="ri-attachment-line"></i>
+                    <i class='bx bx-smile' ></i>
+                    <textarea class="textarea" placeholder="Type here..."></textarea>
+                    <button type="button"><i class="ri-send-plane-fill"></i></button>
+                </div>
+                    
+            </div>
 
         </div>
     </div>
