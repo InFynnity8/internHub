@@ -91,12 +91,12 @@ body{
 }
 
 .profile{
-    margin-left: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 160px;
 }
+
 
 .profilepic{
     height: 50px;

@@ -14,11 +14,12 @@ body{
 
 .navbar{
     margin-top: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     width: 1349px;
     height: 50px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.219);
     
 }
 
@@ -135,6 +136,8 @@ body{
     width: 400px;
     background: rgba(77, 135, 242, 0.068);
     overflow-y: auto;
+    overflow-x: hidden;
+    
 }
 
 .search-section{
@@ -217,7 +220,7 @@ body{
     background: rgb(77, 135, 242);
 }
 
-ul li{
+.left-side ul li{
     transition:  .1s; 
     height: 100px;
     display: flex;
@@ -225,12 +228,12 @@ ul li{
     padding-left: 30px;
 }
 
-ul li:hover{
+.left-side ul li:hover{
     cursor: pointer;
     background: rgba(153, 153, 153, 0.13);
 }
 
-ul li .dp{
+.left-side ul li .dp{
     border-radius: 50%;
     height: 60px;
     width: 60px;
@@ -239,24 +242,71 @@ ul li .dp{
     margin-right: 10px;
 }
 
-ul li .description .name{
+.left-side ul li .description .name{
     font-weight: 600;
     color: rgba(0, 0, 0, 0.747);
 }
 
-ul li .description .status{
+.left-side ul li .description .status{
     font-size: 11px;
     color: rgb(15, 221, 211);
 }
 
-
+.chat-count{
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    color: white;
+    background: rgb(236, 83, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    position: sticky;
+    left: 300px;
+}
 
 
 
 
 .right-side{
-    height: 100vh;
+    height: 657px;
     width: 949px;
+    overflow: hidden;
+}
+
+.conversations{
+    display: flex;
+    width: 1900px;
+    z-index: -1;
+}
+
+.conversations.action{
+    transform: translateX(-950px);
+}
+
+.conversation-1{
+    width: 950px;
+}
+
+.conversation-2{
+    width: 950px;
+}
+
+.emma{
+    background: white;
+    box-shadow: 0px 0px 10px rgb(153, 153, 153);
+}
+
+
+.emma.action{
+    background: transparent;
+    box-shadow: 0px 0px 0px;
+}
+
+.louis.action{
+    background: white;
+    box-shadow: 0px 0px 10px rgb(153, 153, 153);
 }
 
 .header{
@@ -275,11 +325,20 @@ ul li .description .status{
     align-items: center;
 }
 
-.person .profilephoto{
+.person .profilephoto-1{
     border-radius: 50%;
     height: 100px;
     width: 100px;
     background-image: url('/asset/man3.jpeg');
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.person .profilephoto-2{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-image: url('/asset/man2.avif');
     background-size: cover;
     margin-right: 15px;
 }
@@ -307,15 +366,113 @@ ul li .description .status{
 
 .chat-space{
     height: 400px;
+    overflow-y: auto;
+    padding: 30px;
+   
 }
+
+.chat-space li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+
+.chatbox .outgoing {
+    margin: 20px 0;
+   justify-content: flex-end; 
+}
+
+.chatbox2 .outgoing {
+    margin: 20px 0;
+   justify-content: flex-end; 
+}
+
+.chatbox .incoming p{
+    color: black;
+    max-width: 75%;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 10px 0;
+    background: white;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.chatbox2 .incoming p{
+    color: black;
+    max-width: 75%;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 10px 0;
+    background: white;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.chatbox .timeline{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgb(153, 153, 153);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+}
+
+.chatbox .timeline p{
+    background: white;
+    color: rgb(153, 153, 153);
+    padding: 10px;
+}
+
+.chat-space span{
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    padding: 10px;
+}
+
+.chatbox .chat p{
+    border: none;
+    color: black;
+    max-width: 75%;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background: rgba(77, 135, 242, 0.616);
+}
+
+.chatbox2 .chat p{
+    border: none;
+    color: black;
+    max-width: 75%;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background: rgba(77, 135, 242, 0.616);
+}
+
 
 .message-area{
     border-top: 1px solid rgb(153, 153, 153);
+    position: sticky;
+    bottom: 0;
+    height: 110px;
 }
 
 .typing-area{
     display: flex;
-    align-items: start;
+    align-items: flex-end;
 }
 
 .ri-attachment-line{
@@ -335,12 +492,14 @@ ul li .description .status{
 textarea{
     border: none;
     width: 800px;
-    height: 100px;
+    max-height: 200px;
     padding-left: 20px;
     padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
     outline: none;
     resize: none;
+    display: block;
 }
 
 .typing-area button{
@@ -351,7 +510,7 @@ textarea{
     box-shadow: -1px 1px 3px rgb(77, 135, 242);
     height: 40px;
     width: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 10px;
     font-size: 20px;
     transition: .3s;

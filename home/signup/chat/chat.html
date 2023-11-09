@@ -15,10 +15,10 @@
             <img src="/asset/Layer 2.png" width ="150px" alt="">
         </div>
         <div class="links">
-            <a href="/home/home.html" >Home</a>
-            <a href="/Intern/intern.html" >Intern</a>
-            <a href="/about/about.html" >About Us</a>
-            <a href="/contact/contact.html">Contact Us</a>
+            <a href="/home/signup/userhome/userhome.html" >Home</a>
+            <a href="/home/signup/userIntern/intern.html" >Intern</a>
+            <a href="/home/signup/userAbout/userAbout.html" >About Us</a>
+            <a href="/home/signup/userContact/userContact.html">Contact Us</a>
         </div>
 
         <div class="profile">
@@ -52,7 +52,7 @@
                         <button type="submit"><i class="ri-search-line" title="search"></i></button>
                     </form>
                     <div>
-                        <p>17 Chats</p> 
+                        <p>8 Chats</p> 
                         <button class="recent">Recent <i class="ri-arrow-down-s-line"></i> </button>
                     </div>
                 </div>
@@ -63,9 +63,10 @@
                                 <p class="name">Anthony Smith</p>
                                 <p class="status">Online</p>
                             </div>
+                            <div class="chat-count">1</div>
                         </li>
 
-                        <li>
+                        <li  class="emma">
                             <div class="dp"></div>
                             <div class="description">
                                 <p class="name">Emmanuel Inkum</p>
@@ -73,12 +74,13 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li class="louis">
                             <div class="dp"></div>
                             <div class="description">
                                 <p class="name">Louis Dollar</p>
                                 <p class="status">Online</p>
                             </div>
+                            <div class="chat-count">2</div>
                         </li>
 
                         <li>
@@ -95,6 +97,7 @@
                                 <p class="name">Christian Adom</p>
                                 <p class="status">Online</p>
                             </div>
+                            <div class="chat-count">1</div>
                         </li>
 
                         <li>
@@ -119,6 +122,7 @@
                                 <p class="name">Abraham</p>
                                 <p class="status">Online</p>
                             </div>
+                            <div class="chat-count">3</div>
                         </li>
 
                         <li>
@@ -127,6 +131,7 @@
                                 <p class="name">Grace Hopper</p>
                                 <p class="status">Online</p>
                             </div>
+                            <div class="chat-count">1</div>
                         </li>
 
                         <li>
@@ -143,6 +148,7 @@
                                 <p class="name">Fred Kojo</p>
                                 <p class="status">Online</p>
                             </div>
+                            <div class="chat-count">2</div>
                         </li>
 
                         <li>
@@ -162,31 +168,89 @@
         <!-- right side -->
 
         <div class="right-side">
-            <div class="header">
-                <div class="person">
-                    <div class="profilephoto"></div>
-                    <div class="info">
-                        <p class="name" 
-                        style="font-size: 22px;">Emmanuel Inkum</p>
-                        <p class="education"
-                        style="font-size: 14px;
-                        color: rgb(134, 133, 133);">Computer Science, KNUST</p>
+
+            <div class="conversations">
+                    <div class="conversation-1">
+                        <div class="header">
+                            <div class="person">
+                                <div class="profilephoto-1"></div>
+                                <div class="info">
+                                    <p class="name" 
+                                    style="font-size: 22px;">Emmanuel Inkum</p>
+                                    <p class="education"
+                                    style="font-size: 14px;
+                                    color: rgb(134, 133, 133);">Computer Science, KNUST</p>
+                                </div>
+                            </div>
+                            <button class="options" title="options">...</button>
+                        </div>
+
+                        <!-- chatting screen -->
+                        <div class="chat-space">
+
+                            <ul class="chatbox">
+                            
+                                <li class="incoming"><p>Hello</p><span>10:14 PM</span></li>
+                                <li class="incoming"><p>I don't think I will  be able to do the backend</p><span>10:15 PM</span></li>
+                                <li class="outgoing chat"><span>10:19 PM</span><p>Okay, no problem</p></li>
+                                <div class="timeline"><p>TODAY</p></div>
+                                <li class="incoming"><p>What's up</p> <span>3:14 PM</span></li>
+                            
+                            </ul>
+                        </div>
+
+                        <div class="message-area">
+                            <div class="typing-area">
+                                <i class="ri-attachment-line"></i>
+                                <i class='bx bx-smile' ></i>
+                                <textarea class="textarea" rows="1" placeholder="Type here..."></textarea>
+                                <button type="button" class="sendbtn"><i class="ri-send-plane-fill"></i></button>
+                            </div>
+                                
+                        </div>
                     </div>
-                </div>
-                <button class="options" title="options">...</button>
-            </div>
 
-            <div class="chat-space"></div>
+                    <div class="conversation-2">
+                        <div class="header">
+                            <div class="person">
+                                <div class="profilephoto-2"></div>
+                                <div class="info">
+                                    <p class="name" 
+                                    style="font-size: 22px;">Louis Dollar</p>
+                                    <p class="education"
+                                    style="font-size: 14px;
+                                    color: rgb(134, 133, 133);">IT, Legon</p>
+                                </div>
+                            </div>
+                            <button class="options" title="options">...</button>
+                        </div>
 
-            <div class="message-area">
-                <div class="typing-area">
-                    <i class="ri-attachment-line"></i>
-                    <i class='bx bx-smile' ></i>
-                    <textarea class="textarea" placeholder="Type here..."></textarea>
-                    <button type="button"><i class="ri-send-plane-fill"></i></button>
-                </div>
-                    
+                        <!-- chatting screen -->
+                        <div class="chat-space">
+                            
+                            <ul class="chatbox2">
+                                <li class="outgoing chat"><span>10:19 PM</span><p>Use Vue.js instead</p></li>
+                                <li class="incoming"><p>Alright</p><span>10:51 AM</span></li>
+                                <li class="incoming"><p>I will finish it by the end of the day</p><span>11:01 AM</span></li>
+                                
+                            
+                            </ul>
+                        </div>
+
+                        <div class="message-area">
+                            <div class="typing-area">
+                                <i class="ri-attachment-line"></i>
+                                <i class='bx bx-smile' ></i>
+                                <textarea class="textarea" rows="1" placeholder="Type here..."></textarea>
+                                <button type="button" class="sendbtn"><i class="ri-send-plane-fill"></i></button>
+                            </div>
+                                
+                        </div>
+                    </div>
             </div>
+            
+
+            
 
         </div>
     </div>
