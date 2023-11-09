@@ -531,6 +531,9 @@ h6{
     border: none;
     margin-top: 5px;
     margin-bottom: 3px;
+    resize: none;
+    font-style: inherit;
+    font-size: 16px;
 }
 
 

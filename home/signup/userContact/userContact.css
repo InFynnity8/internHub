@@ -179,6 +179,8 @@ body{
     padding-left: 15px;
     width: 550px;
     font-size: 15px;
+    resize: none;
+    font-style: inherit;
 }
 
 .questionarea p{
