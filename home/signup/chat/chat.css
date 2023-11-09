@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: fit-content;
+}
+
+
+/* navigation bar */
+
+.navbar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 1349px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+    font-weight: 900;   
+}
+
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
+.logo:hover{
+   cursor: pointer;
+}
+
+.links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 50px;
+    padding-left: 250px;
+    font-size: 1.2em;
+    font-weight: 500;
+   
+}
+
+.links a{
+    margin-right: 10px;
+    width: 120px;
+    text-decoration: none;
+    margin-left: 0px;
+    color: rgb(77, 135, 242);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.links a::after{
+    content: '';
+    width: 120px;
+    height: 3px;
+    background: rgb(236, 83, 109);
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin:center;
+    transform: scaleX(0);
+    transition: transform .5s;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.profile{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.profilepic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('/asset/lead1.jpg');
+    background-size: contain;
+}
+
+.greetings{
+    color: rgb(77, 135, 242);
+    font-weight: 600;
+}
+
+.profile .comp{
+     color: rgb(80, 80, 80);
+     font-size: 12px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+/* .left-scroll{
+    height: 100vh;
+    width: 380px;
+   
+} */
+
+.left-side{
+    height: 100vh;
+    width: 400px;
+    background: rgba(77, 135, 242, 0.068);
+    overflow-y: auto;
+}
+
+.search-section{
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.search-section .chat{
+    color: rgb(77, 135, 242);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.search-section input{
+    width: 340px;
+    border: none;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 60px;
+    font-size: 17px;
+    outline: none;
+    background: white;
+    box-shadow: 0px 0px 4px 0px rgba(35, 36, 37, 0.11);
+
+}
+
+.search-section form button{
+    position: relative;
+    right: -300px;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    top: -33px;
+    color: rgb(77, 135, 242);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search-section form button:hover{
+    transform: scale(1.1); 
+}
+
+
+
+.search-section div{
+    display: flex;
+    justify-content: space-between;
+    width: 335px;
+    align-items: center;
+    
+}
+
+.search-section div p{
+    color: rgb(77, 135, 242);
+    font-size: 17px;
+}
+
+.search-section div .recent{
+    border: 1px solid rgb(77, 135, 242);
+    height: 30px;
+    width: 100px;
+    background: transparent;
+    color: rgb(77, 135, 242);
+    border-radius: 9px;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.search-section div .recent:hover{
+    cursor: pointer;
+    color: white;
+    background: rgb(77, 135, 242);
+}
+
+ul li{
+   
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+ul li .dp{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-image: url('/asset/man3.jpeg');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+ul li .description .name{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+ul li .description .status{
+    font-size: 11px;
+    color: rgb(15, 221, 211);
+}
+
+
+
+
+
+
+.right-side{
+    height: 100vh;
+    width: 949px;
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    box-shadow: 1px 2px 3px rgb(209, 209, 209);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.person .profilephoto{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-image: url('/asset/man3.jpeg');
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.person .info{
+    display: grid;
+    align-items: center;
+    line-height: 25px;
+}
+
+.header .options{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(153, 153, 153);
+    background: transparent;
+    align-items: center;
+    cursor: pointer;
+}
