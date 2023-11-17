@@ -228,6 +228,14 @@ footer{
     padding: 20px;
 }
 
+.application .chart{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    font-size: 14px;
+}
+
 .application .top{
     color: rgb(236, 83, 109);
     font-size: 18px;
@@ -362,4 +370,84 @@ footer{
     width: 310px;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+
+/* pie section*/
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 160px;
+    position: relative; 
+    margin-right: 150px;
+
+}
+
+#myPieChart {
+    flex: 0 0 40%;
+ 
+}
+
+#legend {
+    flex: 0 0 40%;
+    display: grid;
+    align-items: center;
+    height: 170px;
+    align-self: center;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 150px;
+    color: rgb(6, 175, 226);
+}
+
+.legend-color {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid rgb(114, 114, 114);
+}
+
+#centerTotal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgb(80, 79, 79);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+
+}
+
+
+
+.totaloutline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(133, 11, 163, 0.37);
+    border-radius: 50%;
+    height: 86px;
+    width: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
