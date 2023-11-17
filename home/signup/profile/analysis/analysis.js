@@ -5,7 +5,7 @@ var ctx = document.getElementById('myPieChart').getContext('2d');
 var initialData = {
     labels: ['Accepted', 'Rejected', 'Processing', 'Decline Acceptance'],
     datasets: [{
-        data: [123, 36, 50, 97], 
+        data: [13, 6, 4, 7], 
         backgroundColor: ['rgb(12, 198, 210)', 'rgb(124, 200, 219)', 'rgb(74, 115, 126)', 'rgb(1, 51, 65)'], 
     }]
 };
@@ -62,7 +62,8 @@ function updateLegend() {
         legendItem.appendChild(legendText);
         legend.appendChild(legendItem);
     });
-    centerTotal.innerText = `${total} Applicants`;
+    centerTotal.innerText = `${total} Applications`;
+    centerTotal.style.fontSize = `${11}` + 'px';
 }
 
 
