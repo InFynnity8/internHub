@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: fit-content;
+}
+
+
+/* navigation bar */
+
+.navbar{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 1349px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.219);
+    
+}
+
+.logo{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+    font-weight: 900;   
+}
+
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
+.logo:hover{
+   cursor: pointer;
+}
+
+.links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 50px;
+    padding-left: 250px;
+    font-size: 1.2em;
+    font-weight: 500;
+   
+}
+
+.links a{
+    margin-right: 10px;
+    width: 120px;
+    text-decoration: none;
+    margin-left: 0px;
+    color: rgb(77, 135, 242);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.links a::after{
+    content: '';
+    width: 120px;
+    height: 3px;
+    background: rgb(236, 83, 109);
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin:center;
+    transform: scaleX(0);
+    transition: transform .5s;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.profile{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.profilepic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('/asset/lead1.jpg');
+    background-size: contain;
+}
+
+.greetings{
+    color: rgb(77, 135, 242);
+    font-weight: 600;
+}
+
+.profile .comp{
+     color: rgb(80, 80, 80);
+     font-size: 12px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+/* .left-scroll{
+    height: 100vh;
+    width: 380px;
+   
+} */
+
+.left-side{
+    height: 100vh;
+    width: 400px;
+    background: rgba(77, 135, 242, 0.068);
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+.search-section{
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.search-section .chat{
+    color: rgb(77, 135, 242);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.search-section input{
+    width: 340px;
+    border: none;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 60px;
+    font-size: 17px;
+    outline: none;
+    background: white;
+    box-shadow: 0px 0px 4px 0px rgba(35, 36, 37, 0.11);
+
+}
+
+.search-section form button{
+    position: relative;
+    right: -300px;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    top: -33px;
+    color: rgb(77, 135, 242);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search-section form button:hover{
+    transform: scale(1.1); 
+}
+
+
+
+.search-section div{
+    display: flex;
+    justify-content: space-between;
+    width: 335px;
+    align-items: center;
+    
+}
+
+.search-section div p{
+    color: rgb(77, 135, 242);
+    font-size: 17px;
+}
+
+.search-section div .recent{
+    border: 1px solid rgb(77, 135, 242);
+    height: 30px;
+    width: 100px;
+    background: transparent;
+    color: rgb(77, 135, 242);
+    border-radius: 9px;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.search-section div .recent:hover{
+    cursor: pointer;
+    color: white;
+    background: rgb(77, 135, 242);
+}
+
+.left-side ul li{
+    transition:  .1s; 
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.left-side ul li:hover{
+    cursor: pointer;
+    background: rgba(153, 153, 153, 0.13);
+}
+
+.left-side ul li .dp{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-image: url('/asset/man3.jpeg');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.left-side ul li .description .name{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.left-side ul li .description .status{
+    font-size: 11px;
+    color: rgb(15, 221, 211);
+}
+
+.chat-count{
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    color: white;
+    background: rgb(236, 83, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    position: sticky;
+    left: 300px;
+}
+
+
+
+
+.right-side{
+    height: 657px;
+    width: 949px;
+    overflow: hidden;
+}
+
+.conversations{
+    display: flex;
+    width: 1900px;
+    z-index: -1;
+}
+
+.conversations.action{
+    transform: translateX(-950px);
+}
+
+.conversation-1{
+    width: 950px;
+}
+
+.conversation-2{
+    width: 950px;
+}
+
+.emma{
+    background: white;
+    box-shadow: 0px 0px 10px rgb(153, 153, 153);
+}
+
+
+.emma.action{
+    background: transparent;
+    box-shadow: 0px 0px 0px;
+}
+
+.louis.action{
+    background: white;
+    box-shadow: 0px 0px 10px rgb(153, 153, 153);
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    box-shadow: 1px 2px 3px rgb(209, 209, 209);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.person .profilephoto-1{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-image: url('/asset/man3.jpeg');
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.person .profilephoto-2{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-image: url('/asset/man2.avif');
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.person .info{
+    display: grid;
+    align-items: center;
+    line-height: 25px;
+}
+
+.header .options{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(153, 153, 153);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: rgb(153, 153, 153);
+}
+
+.chat-space{
+    height: 400px;
+    overflow-y: auto;
+    padding: 30px;
+   
+}
+
+.chat-space li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+
+.chatbox .outgoing {
+    margin: 20px 0;
+   justify-content: flex-end; 
+}
+
+.chatbox2 .outgoing {
+    margin: 20px 0;
+   justify-content: flex-end; 
+}
+
+.chatbox .incoming p{
+    color: black;
+    max-width: 75%;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 10px 0;
+    background: white;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.chatbox2 .incoming p{
+    color: black;
+    max-width: 75%;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 10px 0;
+    background: white;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.chatbox .timeline{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgb(153, 153, 153);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+}
+
+.chatbox .timeline p{
+    background: white;
+    color: rgb(153, 153, 153);
+    padding: 10px;
+}
+
+.chat-space span{
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    padding: 10px;
+}
+
+.chatbox .chat p{
+    border: none;
+    color: black;
+    max-width: 75%;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background: rgba(77, 135, 242, 0.616);
+}
+
+.chatbox2 .chat p{
+    border: none;
+    color: black;
+    max-width: 75%;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background: rgba(77, 135, 242, 0.616);
+}
+
+
+.message-area{
+    border-top: 1px solid rgb(153, 153, 153);
+    position: sticky;
+    bottom: 0;
+    height: 110px;
+}
+
+.typing-area{
+    display: flex;
+    align-items: flex-end;
+}
+
+.ri-attachment-line{
+    color: rgb(153, 153, 153);
+    font-size: 25px;
+    transform: rotate(45deg);
+    padding: 10px;
+}
+
+.bx.bx-smile{
+    color: rgb(153, 153, 153);
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+textarea{
+    border: none;
+    width: 800px;
+    max-height: 200px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    outline: none;
+    resize: none;
+    display: block;
+}
+
+.typing-area button{
+    border-radius: 50%;
+    background: white;
+    border: none;
+    color: rgb(77, 135, 242);
+    box-shadow: -1px 1px 3px rgb(77, 135, 242);
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.typing-area button:hover{
+    cursor: pointer;
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 3px rgb(77, 135, 242);
+}
+
+
+
+
+  

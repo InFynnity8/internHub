@@ -927,7 +927,7 @@ ul{
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 15px;
    
@@ -936,6 +936,7 @@ ul{
 
 .conclude1 a{
     color: white;
+    margin-right: 50px;
 }
 
 .conclude2 a{
@@ -968,5 +969,5 @@ ul{
 
 .foot{
     width: 100%;
-    background: rgba(77, 58, 249, 0.608);
+    background: rgba(1, 27, 82, 0.467);
 }

@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: fit-content;
+    background-image: url('/asset/businesspic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* navigation bar */
+
+.navbar{
+    margin-bottom: 40px;
+    width: 1349px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.logo{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+    font-weight: 900;   
+}
+
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
+.logo:hover{
+   cursor: pointer;
+}
+
+.links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 50px;
+    padding-left: 250px;
+    font-size: 1.2em;
+    font-weight: 500;
+   
+}
+
+.links a{
+    margin-right: 10px;
+    width: 120px;
+    text-decoration: none;
+    margin-left: 0px;
+    color: rgb(77, 135, 242);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.links a::after{
+    content: '';
+    width: 120px;
+    height: 3px;
+    background: rgb(236, 83, 109);
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin:center;
+    transform: scaleX(0);
+    transition: transform .5s;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.chatbtn{
+    display: flex;
+    margin-left: 50px;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbtn i{
+    font-size: 40px;
+}
+
+.chatbtn:hover{
+    cursor: pointer;
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.profilepic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('/asset/lead1.jpg');
+    background-size: contain;
+}
+
+.greetings{
+    color: rgb(77, 135, 242);
+    font-weight: 600;
+}
+
+.profile .comp{
+     color: rgb(80, 80, 80);
+     font-size: 12px;
+}
+
+
+footer{
+    position: relative;
+    background-image: linear-gradient(0deg, black, transparent);
+    height: 120px;
+    z-index: 0;
+}
+
+.profile1{
+    position: relative;
+    z-index: 1;
+    height: 0;
+}
+
+.profilebtn{
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+    background: white;
+    margin-left: 1090px;
+    margin-top: 40px;
+}
+
+.profilebtn:hover{
+    cursor: pointer;
+}
+
+.topic{
+    width: 220px;
+    height: 50px;
+    background: white;
+    color: rgb(236, 83, 109);
+    font-weight: 500;
+    margin-left: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.overview-application{
+    display: flex;
+}
+
+.overview{
+    padding: 20px;
+    margin-left: 85px;
+    background: white;
+    width: 760px;
+    height: 330px;
+    margin-top: 25px;
+    border-radius: 30px;
+}
+
+.overview .top{
+    display: flex;
+    align-items: center;
+    width: 710px;
+    justify-content: space-between;
+}
+
+.overview .top p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(236, 83, 109);
+}
+
+.overview .top select{
+    background: rgba(77, 135, 242, 0.466);
+    border: none;
+    outline: none;
+    height: 33px;
+    width: 105px;
+    border-radius: 20px;
+    padding-left: 30px;
+    font-size: 16px;
+    color: rgb(26, 99, 236);
+}
+
+.application{
+    border-radius: 30px;
+    margin-top: 25px;
+    width: 350px;
+    height: 330px;
+    background: white;
+    margin-left: 25px;
+    padding: 20px;
+}
+
+.application .top{
+    color: rgb(236, 83, 109);
+    font-size: 18px;
+}
+
+.interned-messages{
+    display: flex;
+}
+
+.interned .top{
+    display: flex;
+    align-items: center;
+    width: 310px;
+    justify-content: space-between;
+}
+
+.interned .top p{
+    color: rgb(236, 83, 109);
+    font-size: 18px;
+}
+
+.interned .details{
+    margin-top: 10px;
+    height: 250px;
+    width: 310px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.interned .details .labels{
+    color: rgb(77, 135, 242);
+    margin-top: 10px;
+
+}
+
+.interned .top select{
+    background: rgba(77, 135, 242, 0.534);
+    border: none;
+    outline: none;
+    height: 33px;
+    width: 105px;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: rgb(26, 99, 236);
+}
+
+.interned{
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 25px;
+    width: 350px;
+    height: 330px;
+    background: white;
+    margin-left: 85px;
+}
+
+.messages{
+    border-radius: 30px;
+    margin-top: 25px;
+    width: 350px;
+    height: 330px;
+    background: white;
+    margin-left: 25px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.messages li{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.messages li .dp{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: url('/asset/woman.jpg');
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.messages li .chatbox{
+    border: 1px solid rgb(77, 135, 242);
+    width: 230px;
+    height: 95px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.messages li .chatbox .company-name{
+    color: rgb(77, 135, 242);
+}
+
+.messages li .chatbox .replybtn{
+    color: white;
+    border: none;
+    background: rgb(77, 135, 242);
+    width: 60px;
+    border-radius: 5px;
+    height: 17px;
+    font-size: 12px;
+    margin-left: 150px;
+    transition: .3s;
+}
+
+.messages li .chatbox .replybtn:hover{
+    background: rgb(26, 99, 236);
+    cursor: pointer;
+}
+
+.messages li .chatbox .chat{
+    height: 50px;
+    padding: 2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.messages .top{
+    color: rgb(236, 83, 109);
+    font-size: 18px;
+    text-align: center;
+}
+
+.messages .message{
+    margin-top: 10px;
+    height: 260px;
+    width: 310px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

@@ -23,11 +23,8 @@ body{
 }
 
 .logo{
-    font-size: 1.5em;
     display: flex;
-    justify-content: left;
-    font-weight: 900;   
-
+    justify-content: left; 
 }
 
 .logo img{
@@ -40,16 +37,12 @@ body{
    cursor: pointer;
 }
 
-.logo:hover{
-   cursor: pointer;
-}
-
 .links{
     display: flex;
     justify-content: right;
     align-items: center;
-    margin-right: 50px;
-    padding-left: 150px;
+    margin-right: 10px;
+    padding-left: 180px;
     font-size: 1.2em;
     font-weight: 500;
    
@@ -90,60 +83,365 @@ body{
     transform: scaleX(1);
 }
 
-.navbtns{
+.profile{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.profilepic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('/asset/lead1.jpg');
+    background-size: contain;
+}
+
+.greetings{
+    color: rgb(77, 135, 242);
+    font-weight: 600;
+}
+
+.profile .comp{
+     color: rgb(80, 80, 80);
+     font-size: 12px;
+}
+
+
+/* introduction */
+
+
+.inroduction{
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
 
-
-.navbtn2{
-    color: white;
-    border: 1px solid rgb(77, 135, 242);
-    background: rgb(77, 135, 242);
-    border-radius: 20px;
-    width: 180px;
-    height: 40px;
-    border: none;
-    margin-left: 40px;
-    font-size: 0.8em;
-    transition: .3s;
+.intro-search{
+    margin-left: 50px;
+    width: 50%;
 }
 
-.navbtn2:hover{
+.intro h1{
+    color: rgb(77, 135, 242);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.intro .intern{
+    color: rgb(236, 83, 109);
+}
+
+.intro p{
+    color: rgb(77, 135, 242);
+    font-weight: 510;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.search{
+    display: grid;
+}
+
+.search label{
+    color:  rgb(77, 135, 242);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.search .city{
+    padding-left: 20px;
+    outline: none;
+    width: 370px;
+    height: 45px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(77, 135, 242);
+    font-size: 16px;
+    color:  rgb(65, 63, 63);
+}
+
+.search .submit{
+    color: white;
+    outline: none;
+    margin-top: 0px;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    width: 180px;
+    background: rgb(77, 135, 242);
+    transition: .3s;
+    margin-left: 100px;
+}
+
+.search .submit:hover{
     cursor: pointer;
     background: rgb(28, 104, 245);
 }
 
-.navbtn2 a{
-    text-decoration: none;
+.bx.bx-chevron-down{
+    position: absolute;
+    display: flex;
+    left: 370px;
+    margin-bottom: 900px;
+    color: rgb(77, 135, 242);
+    font-size: 40px;  
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+}
+
+select{
+    padding-left: 20px;
+    outline: none;
+    width: 350px;
+    height: 45px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 16px;
+    color:  rgb(114, 112, 112);
+    background: transparent;
+    
+}
+
+.regional{
+    
+    outline: none;
+    width: 370px;
+    height: 45px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(77, 135, 242);
+    font-size: 16px;
+    color:  rgb(114, 112, 112);
+}
+
+.hello-photo{
+    position: absolute;
+    width: 500px;
+    background: url("/asset/Asset\ 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    top: 130px;
+    margin-left: 750px;
+    margin-top: 0;
+}
+
+
+
+
+/* cards */
+
+.cards1{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.card{
+    width: 600px;
+    height: 450px;
+    border: 1px solid rgb(77, 135, 242);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: flex;
+    padding: 30px;
+}
+
+.cards2{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+
+.cardimage1{
+    width: 60%;
+    background: url(/asset/uiintern.jpeg);
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.cardimage2{
+    width: 60%;
+    background: url("/asset/softintern.jpeg");
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.cardimage3{
+    width: 60%;
+    background: url("/asset/cocoaintern.jpg");
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.cardimage4{
+    width: 60%;
+    background: url("/asset/businessintern.jpg");
+    background-size: cover;
+    margin-right: 30px;
+}
+
+
+
+.cardcontent{
+    width: 45%;
+    font-size: 0.9em;
+}
+
+.description p{
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+ul{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.cardcontent h5{
+    color: rgb(77, 135, 242);
+    font-size: 1.3em;    
+}
+
+.cardcontent .title p{
+    margin-bottom: 10px;
+    color: rgb(125, 126, 126);
+}
+
+.btns{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailbtn{
+    border: 1px solid rgb(77, 135, 242);
+    background: transparent;
+    margin: 5px;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.detailbtn:hover{
+    cursor: pointer;
+    background: rgb(77, 135, 242);
     color: white;
 }
 
-.content{ 
-    margin: 50px;
-    margin-left: 60px;
-    margin-right: 80px;
+.applybtn{
+    border: 1px solid rgb(77, 135, 242);
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: white;
+    background: rgb(77, 135, 242);
+    margin: 5px;
+    transition: .5s;
 }
 
-.content .intro h3{
+.applybtn:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+
+}
+
+.opplink{
+    font-size: 1.3em;
+    color: rgb(77, 135, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.opplink a{
     color: rgb(77, 135, 242);
 }
 
-.content .intro p{
+
+
+
+
+/* aboutsection */
+
+.aboutsection{
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
     margin-bottom: 20px;
-    line-height: 2;
+    line-height: 25px;
+    width: fit-content;
 }
 
+.aboutimg{
+    background: url("/asset/aboutus.jpg");
+    background-size: cover;
+    width: 600px;
+    height: auto;
+}
+
+.aboutcontent{
+    width: 600px;
+    height: 450px;
+    margin-left: 40px;
+    height: fit-content;
+}
+
+.aboutbtnbox{
+    display: flex;
+    justify-content: end;
+    margin-top: 60px;
+}
+
+.aboutbtn{
+    color: white;
+    border: none;
+    background: rgb(77, 135, 242);
+    width: 150px;
+    height: 38px;
+    font-size: 1em;
+    transition: .5s;
+}
+
+.aboutbtn:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+
+}
+
+.aboutcontent h3{
+    color: rgb(77, 135, 242);
+    margin-bottom: 20px;
+}
 
 
 
 /* our pricing */
 
+.priceheader{
+    display: flex;
+    color: rgb(77, 135, 242);
+    justify-content: center;
+    margin-top: 100px;
+    width: 1366px;
+}
+
+
 .servicesection{
     padding-left: 50px;
     padding-right: 50px;
+    width: 1365px;
 }
 
 .servicesection h3{
@@ -155,10 +453,11 @@ body{
 }
 
 .servicecards{
+    width: fit-content;
     margin-top: 30px;
     display: flex;
-    justify-content: center
-    
+    justify-content: center;
+    margin-left: 130px;
 }
 
 
@@ -170,7 +469,6 @@ body{
     margin-right: 50px;
     overflow: hidden;
     margin-bottom: 50px;
-    
 }
 
 .servicecards .title{
@@ -352,7 +650,10 @@ body{
 
 
 
-/* our clients */
+
+
+
+/* ourclients */
 
 .ourclients{
     margin-right: 50px;
@@ -364,6 +665,8 @@ body{
     color: rgb(77, 135, 242);
     margin: 20px;
 }
+
+
 
 .clients{
     display: flex;
@@ -398,105 +701,12 @@ body{
 
 
 
-/* our team */
-
-.ourteam{
-    margin-right: 50px;
-    margin-left: 50px;
-    padding-top: 50px;
-}
-
-.ourteam h3{
-    color: rgb(77, 135, 242);
-    margin: 20px;
-    margin-bottom: 20px;
-}
-
-.members{
-    display: flex;
-    justify-content: space-between;
-}
-
-.members .card{
-    border-radius: 10px;
-    border: 2px solid rgb(77, 135, 242);
-    width: 270px;
-    height: 390px;
-    overflow: hidden;
-    line-height: 0.2;
-    margin-bottom: 70px;
-}
-
-.members .card .image1{
-    width: 280px;
-    height: 260px;
-    background: url(/asset/lead2.jpg);
-    background-size: cover;
-    background-position: absolute;
-    
-}
-
-.members .card .image2{
-    width: 280px;
-    height: 260px;
-    background: url(/asset/lead3.jpg);
-    background-size: cover;
-}
-
-
-.members .card .image3{
-    width: 280px;
-    height: 260px;
-    background: url(/asset/lead1.jpg);
-    background-size: cover;
-}
-
-.members .card .image4{
-    width: 280px;
-    height: 260px;
-    background: url(/asset/lead4.jpg);
-    background-size: cover;
-}
-
-.identity h3{
-    text-align: center;
-}
-
-.identity p{
-    text-align: center;
-    margin-bottom: 25px;
-    color: rgb(81, 80, 80);
-}
-
-.members .mediaicons i{
-    color: rgb(28, 104, 245);
-}
-
-h6{
-    color: rgb(77, 135, 242);
-    font-size: 23px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.people{
-    height: 500px;
-}
-
-
-
-
-
-
-
-
-
 
 /* messagesection */
 
 .messagesection{
     width: fit-content;
-    height: 731px;
+    height: 731px; 
     background-color: rgb(14, 66, 164);
     border-top: 1px solid rgb(77, 135, 242);
     background-image: url('/asset/people.png');
@@ -518,7 +728,6 @@ h6{
     height: 350px;
     border-right: 1px solid white;
     padding-left: 50px;
-
 }
 
 .sendmessage p{
@@ -559,11 +768,13 @@ h6{
     font-size: 1em;
     background: rgb(77, 135, 242);
     margin-top: 20px;
+    transition: .3s;
 }
 
 .sendmessage .sendmessagebtn:hover{
     cursor: pointer;
     background: rgb(28, 104, 245);
+    border: none;
 }
 
 .quicklinks{
@@ -633,11 +844,13 @@ h6{
     font-size: 1em;
     background: rgb(77, 135, 242);
     margin-top: 20px;
+    transition: .3s;
 }
 
 .contacts .subscribe:hover{
     cursor: pointer;
     background: rgb(28, 104, 245);
+    border: none;
 }
 
 .mediaicons{
@@ -690,7 +903,7 @@ h6{
     font-size: 15px;
     margin-bottom: 30px;
     margin-top: 10px;
-   
+  
 }
 
 
@@ -708,6 +921,3 @@ h6{
     width: 100%;
     background: rgba(1, 27, 82, 0.467);
 }
-
-
-

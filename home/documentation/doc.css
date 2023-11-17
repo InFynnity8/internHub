@@ -139,7 +139,7 @@ body{
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 15px;
 
@@ -147,6 +147,7 @@ body{
 
 .conclude1 a{
     color: rgb(28, 104, 245);
+    margin-right: 50px;
 }
 
 .conclude2 a{

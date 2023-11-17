@@ -91,12 +91,11 @@ body{
 }
 
 .chatbtn{
-    border: 1px solid rgb(77, 135, 242);
     display: flex;
     margin-left: 250px;
     height: 30px;
     width: 30px;
-    background: rgb(77, 135, 242);
+    font-size: 40px;
 }
 
 .chatbtn:hover{

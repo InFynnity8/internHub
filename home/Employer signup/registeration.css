@@ -83,6 +83,32 @@ body{
     transform: scaleX(1);
 }
 
+.profile{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.profilepic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('/asset/lead1.jpg');
+    background-size: contain;
+}
+
+.greetings{
+    color: rgb(77, 135, 242);
+    font-weight: 600;
+}
+
+.profile .comp{
+     color: rgb(80, 80, 80);
+     font-size: 12px;
+}
+
 .content{
     margin-left: 10px;
     margin-right: 60px;
@@ -169,7 +195,7 @@ form .largearea {
     align-items: center;
 }
 
-form .largearea input{
+form .largearea textarea{
     outline: none;
     border: 1px solid rgb(77, 135, 242);
     padding-left: 10px;
@@ -178,6 +204,10 @@ form .largearea input{
     margin-bottom: 20px;
     margin-top: 10px;
     padding-bottom: 210px;
+    padding-top: 10px;
+    font-style: inherit;
+    resize: none;
+    font-size: 15px;
 }
 
 form .submitbtn{
@@ -273,6 +303,10 @@ form .right{
     border: none;
     margin-top: 5px;
     margin-bottom: 3px;
+    font-size: 15px;
+    font-style: inherit;
+    padding-top: 10px;
+    resize: none;
 }
 
 
@@ -403,7 +437,7 @@ form .right{
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 15px;
 
@@ -411,6 +445,7 @@ form .right{
 
 .conclude1 a{
     color: white;
+    margin-right: 50px;
 }
 
 .conclude2 a{
