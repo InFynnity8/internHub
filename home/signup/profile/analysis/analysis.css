@@ -193,6 +193,11 @@ footer{
     border-radius: 30px;
 }
 
+.overview .graph{
+   
+    height: 260px;
+}
+
 .overview .top{
     display: flex;
     align-items: center;
