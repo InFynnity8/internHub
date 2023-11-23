@@ -247,6 +247,8 @@ footer{
 }
 
 
+
+
 .interns-others-messages{
     display: flex;
 }
@@ -498,7 +500,13 @@ footer{
     align-items: center;
     color: white;
     font-size: 12px;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
 
+#centerTotal.hovered-state{
+    height: 0;
+    width: 0;
 }
 
 
@@ -517,4 +525,10 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
+    transition: .5s ease-in-out;
+}
+
+.totaloutline.hovered-state{
+    height: 0;
+    width: 0;
 }

@@ -71,6 +71,31 @@ updateLegend();
 
 
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    var targetDiv = document.querySelector('.chart-container');
+    var target = document.getElementById('centerTotal');
+    var target1 = document.querySelector('.totaloutline');
+
+    
+    targetDiv.addEventListener('mouseover', function () {
+    
+      target.classList.add('hovered-state');
+      target1.classList.add('hovered-state');
+    });
+
+ 
+    targetDiv.addEventListener('mouseout', function () {
+    
+      target.classList.remove('hovered-state');
+      target1.classList.remove('hovered-state');
+    });
+  });
+
+
+
 // graph
 
 

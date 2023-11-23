@@ -270,7 +270,6 @@ body{
 
 
 .right-side{
-    height: 657px;
     width: 949px;
     overflow: hidden;
 }
@@ -468,6 +467,7 @@ body{
     position: sticky;
     bottom: 0;
     height: 110px;
+   
 }
 
 .typing-area{

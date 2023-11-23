@@ -436,9 +436,14 @@ footer{
     align-items: center;
     color: white;
     font-size: 12px;
-
+    transition: .5s ease-in-out;
+    overflow: hidden;
 }
 
+#centerTotal.hovered-state{
+    height: 0;
+    width: 0;
+}
 
 
 .totaloutline{
@@ -455,4 +460,10 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
+    transition: .5s ease-in-out;
+}
+
+.totaloutline.hovered-state{
+    height: 0;
+    width: 0;
 }

@@ -70,6 +70,29 @@
 
 
 
+ document.addEventListener('DOMContentLoaded', function () {
+    // Get a reference to the div you want to add the class to
+    var targetDiv = document.querySelector('.chart-container');
+    var target = document.getElementById('centerTotal');
+    var target1 = document.querySelector('.totaloutline');
+
+    // Add an event listener for the 'mouseover' event
+    targetDiv.addEventListener('mouseover', function () {
+      // Add the class when the mouse is over the div
+      target.classList.add('hovered-state');
+      target1.classList.add('hovered-state');
+    });
+
+    // Add an event listener for the 'mouseout' event
+    targetDiv.addEventListener('mouseout', function () {
+      // Remove the class when the mouse leaves the div
+      target.classList.remove('hovered-state');
+      target1.classList.remove('hovered-state');
+    });
+  });
+
+
+
 
 
 
@@ -133,3 +156,7 @@ function getGradient(context) {
     gradient.addColorStop(1, 'rgba(228, 0, 111, 0.7)');
     return gradient;
 }
+
+
+
+
