@@ -220,6 +220,11 @@ body{
     background: rgb(77, 135, 242);
 }
 
+.left-side{
+    height: 657px;
+}
+
+
 .left-side ul li{
     transition:  .1s; 
     height: 100px;
@@ -270,6 +275,7 @@ body{
 
 
 .right-side{
+    height: 657px;
     width: 949px;
     overflow: hidden;
 }
@@ -375,7 +381,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
-    height: 50px;
+    min-height: 50px;
     width: 100%;
     border: none;
     border-radius: 8px;
