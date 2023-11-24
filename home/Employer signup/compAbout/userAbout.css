@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    width: fit-content;
+    width: 100%;
 }
 
 
@@ -492,7 +492,7 @@ h6{
 
 .messagesection{
     width: fit-content;
-    height: 731px;
+    height: 729px;
     background-color: rgb(14, 66, 164);
     border-top: 1px solid rgb(77, 135, 242);
     background-image: url('/asset/people.png');
@@ -510,7 +510,6 @@ h6{
     display: grid;
     justify-content: center;
     align-items:center;
-    width: 600px;
     height: 350px;
     border-right: 1px solid white;
     padding-left: 50px;

@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    width: fit-content;
+    width: 100%;
 }
 
 
@@ -510,7 +510,6 @@ h6{
     display: grid;
     justify-content: center;
     align-items:center;
-    width: 600px;
     height: 350px;
     border-right: 1px solid white;
     padding-left: 50px;

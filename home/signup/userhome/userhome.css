@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    width: fit-content;
+    width: 100%;
 }
 
 
@@ -19,6 +19,7 @@ body{
     height: 50px;
     display: flex;
     align-items: center;
+   
   
 }
 
@@ -434,14 +435,15 @@ ul{
     color: rgb(77, 135, 242);
     justify-content: center;
     margin-top: 100px;
-    width: 1366px;
+    width: 100%px;
 }
 
 
 .servicesection{
     padding-left: 50px;
     padding-right: 50px;
-    width: 1365px;
+    width: 100%;
+ 
 }
 
 .servicesection h3{
@@ -706,12 +708,13 @@ ul{
 
 .messagesection{
     width: fit-content;
-    height: 731px; 
+    height: 729px; 
     background-color: rgb(14, 66, 164);
     border-top: 1px solid rgb(77, 135, 242);
     background-image: url('/asset/people.png');
     background-repeat: none;
     background-size: cover;
+
 }
 
 .lastsection{
@@ -724,7 +727,6 @@ ul{
     display: grid;
     justify-content: center;
     align-items:center;
-    width: 600px;
     height: 350px;
     border-right: 1px solid white;
     padding-left: 50px;
@@ -918,5 +920,5 @@ ul{
 
 .foot{
     width: 100%;
-    background: rgba(77, 58, 249, 0.608);
+    background: rgba(1, 27, 82, 0.467);
 }

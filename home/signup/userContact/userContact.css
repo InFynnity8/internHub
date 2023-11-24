@@ -230,7 +230,7 @@ h3{
 .main-contact{
     display: flex;
     justify-content: space-between;
-    margin: 150px;
+    margin: 141px;
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -313,6 +313,7 @@ h3{
 
 footer{
     background: rgb(28, 104, 245);
+    width: 100%;
 }
 
 .conclude1{

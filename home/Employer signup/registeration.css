@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    width: fit-content;
+    width: 100%;
    
 }
 
@@ -264,8 +264,8 @@ form .right{
 /* messagesection */
 
 .messagesection{
-    width: 100%;
-    height: 731px;
+    width: fit-content;
+    height: 729px;
     background-color: rgb(14, 66, 164);
     border-top: 1px solid rgb(77, 135, 242);
     background-image: url('/asset/people.png');
@@ -283,7 +283,7 @@ form .right{
     display: grid;
     justify-content: center;
     align-items:center;
-    width: 600px;
+    width:583px;
     height: 350px;
     border-right: 1px solid white;
 
