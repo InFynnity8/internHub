@@ -277,9 +277,6 @@ footer{
     margin-right: 5px;
 }
 
-.CoverLetter{
-    margin-right: 350px;
-}
 
 .summarybtn{
     color: white;
@@ -339,6 +336,7 @@ footer{
 
 .previousbtn{
     margin-left: 190px;
+    margin-right: 50px;
     background: white;
     border: 1px solid rgb(77, 135, 242);
     color: rgb(77, 135, 242);
@@ -428,6 +426,7 @@ form select{
     background: transparent;
     font-size: 15px;
     margin-bottom: 10px;
+
 }
 
 .cert{
@@ -441,7 +440,7 @@ form select{
     background: transparent;
     font-size: 15px;
     margin-bottom: 10px;
-    margin-left: -90px;
+   
 }
 
 .inner{
@@ -493,6 +492,18 @@ form .level{
 }
 
 #pass{
+    margin-right: 50px;
+}
+
+.academicpage .pass .data{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    justify-content: space-between;
+    width: 750px;
+}
+
+.academicdetails #pass {
     margin-right: 50px;
 }
    

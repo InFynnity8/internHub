@@ -46,11 +46,29 @@
     </div>
 
     <form action="" class="questionarea">
-        <input type="text" placeholder="what's your question" class="question"> <i class='bx bx-chevron-down'></i>
+        <div class="question">
+            <select name="questions" id="questions" onchange="checkCustom()">
+                <option value="N/A">what's your question</option>
+                <option value="How do I create an employer account and post internship opportunities?">How do I create an employer account and post internship opportunities?</option>
+                <option value="Is there a cost associated with posting internships on the platform?">Is there a cost associated with posting internships on the platform?</option>
+                <option value="What information should I include in my internship posting?">What information should I include in my internship posting?</option>
+                <option value="Can I specify the qualifications and requirements for potential interns?">Can I specify the qualifications and requirements for potential interns?</option>
+                <option value="How does the application review and selection process work for employers?">How does the application review and selection process work for employers?</option>
+                <option value="Can I search for and view student profiles before posting an internship?">Can I search for and view student profiles before posting an internship?</option>
+                <option value="Is there an option to receive notifications for new student applications?">Is there an option to receive notifications for new student applications?</option>
+                <option value="What steps can I take to ensure a diverse pool of applicants?">What steps can I take to ensure a diverse pool of applicants?</option>
+                <option value="How do I communicate with and schedule interviews for potential interns?">How do I communicate with and schedule interviews for potential interns?</option>
+                <option value="Can I edit or remove internship postings after they have been posted?">Can I edit or remove internship postings after they have been posted?</option>
+                <option value="Are there any resources or guidelines for creating effective internship programs?">Are there any resources or guidelines for creating effective internship programs?</option>
+                <option value="What should I do if I encounter technical issues on the website?">What should I do if I encounter technical issues on the website?</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+        <input type="text" class="custom-question" placeholder="what's yout question">
         <input type="email" placeholder="Email" class="email">
         <textarea type="text" placeholder="Your message" class="message"></textarea>
         <p>Subscribe to our newsletter for update on intern opportunity <input type="checkbox" placeholder="N/A" class="check" checked></p> 
-        <button class="subbtn">Submit</button>
+        <input type='submit' class="subbtn"> 
     </form>
 
 
@@ -63,39 +81,44 @@
             <div class="phoneEmail" style="line-height: 15px;">
                 <div class="phone">
                     <span><i class='bx bx-phone-call'></i></span>
+                        
                     <div >
+                       
                         <p style="font-size: 20px;">Phone</p> <br>
-                        <p style="font-size: 15px; margin-bottom: 5px;">+233 (0) 000 000 000 </p>
+                        <p style="font-size: 15px; margin-bottom: 5px; display: flex; align-items: center;">+233 (0) 000 000 000 </p>
                         <p style="font-size: 15px;">+233 (0) 000 000 000 </p>
                     </div>
                 </div>
 
                 <div class="mail">
-                    <span class="mail"><i class='bx bxs-envelope' ></i></span> 
+                    <span><i class='bx bxs-envelope' ></i></span>
                     <div>
-                    <p style="font-size: 20px; margin-bottom: 15px;">Email</p> 
+                    <p style="font-size: 20px; margin-bottom: 15px; ">Email</p> 
                     <p style="font-size: 15px;">internguy@gmail.com</p>
                     </div>
                 </div>
             </div>
             <div class="address">
-                <i class='bx bxs-map'></i> 
-                <div class="one">
-                    <p style="font-size: 20px; margin-bottom: 10px;">Address</p>
-                    <p style="font-size: 15px;">P.O.Box CE 12219,</p>
-                    <p style="font-size: 15px;">Tema-Ghana</p>
+                <div class="content1">
+                    <i class='bx bxs-map'></i> 
+                
+                    <div class="one">
+                        <p style="font-size: 20px; margin-bottom: 10px;">Address</p>
+                        <p style="font-size: 15px;">P.O.Box CE 12219,</p>
+                        <p style="font-size: 15px;">Tema-Ghana</p>
+                    </div>
                 </div>
-                <span class="line" style="color: rgb(138, 138, 138); margin-bottom: -70px;">_______________________</span>
-                <p style="margin-top: 60px;">Digital Address: GW-101</p>
-                <span class="line" style="color: rgb(144, 143, 143); margin-top: 3+0pxpx;">_______________________</span>
-                <p style="margin-bottom: 1x; text-align: center;">Follow us</p>
-                <div class="mediaicons" style=" text-align: center;">
-                    <i class='bx bxl-facebook-square'></i>
-                    <i class='bx bxl-instagram' ></i>
-                    <i class='bx bxl-twitter' ></i>
-                    <i class='bx bxl-linkedin-square'></i>
-                </div>
-
+                    <span class="line" style="color: rgb(138, 138, 138); ">_______________________</span>
+                    <p style="margin-top: 10px; text-align: center;">Digital Address: GW-101</p>
+                    <span class="line" style="color: rgb(144, 143, 143); margin-top: 3+0pxpx;">_______________________</span>
+                    <p style="margin-bottom: 1x; text-align: center;">Follow us</p>
+                    <div class="mediaicons" style=" text-align: center;">
+                        <i class='bx bxl-facebook-square'></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-linkedin-square'></i>
+                    </div>
+                
             </div>
         </div>
 
@@ -123,6 +146,7 @@
         </div>
     </footer>
 
+    <script src="userContact.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"> </script>
 </body>
 </html>

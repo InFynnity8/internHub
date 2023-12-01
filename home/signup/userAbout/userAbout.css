@@ -104,6 +104,7 @@ body{
     border-radius: 50%;
     background-image: url('/asset/lead1.jpg');
     background-size: contain;
+    margin-right: 10px;
 }
 
 .greetings{
@@ -114,6 +115,7 @@ body{
 .profile .comp{
      color: rgb(80, 80, 80);
      font-size: 12px;
+     width: 100px;
 }
 
 

@@ -150,13 +150,31 @@ body{
 }
 
 .questionarea .question{
-    padding: 10px;
     border: 1px solid rgb(77, 135, 242);
     margin-top: 220px;
     margin-bottom: 10px;
     width: 550px;
     font-size: 15px;
     outline: none;
+}
+
+.questionarea select{
+    padding: 10px;
+    border: none;
+    width: 540px;
+    font-size: 15px;
+    outline: none;
+    color: rgb(119, 118, 117);
+}
+
+.questionarea .custom-question{
+    padding: 10px;
+    border: 1px solid rgb(77, 135, 242);
+    margin-bottom: 10px;
+    width: 550px;
+    font-size: 15px;
+    outline: none;
+    display: none;
 }
 
 .questionarea .email{
@@ -244,35 +262,37 @@ h3{
     border: 1px solid rgb(77, 135, 242);
     height: 230px;
     width: 250px;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
     color: rgb(77, 135, 242);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 .phoneEmail i{
-    margin-top: 15px;
     font-size: 30px;
 }
 
-.mail{
-    margin-top: 50px;
+.phone {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 200px;
+    justify-content: space-between;
 }
 
-.phone div{
-    position: absolute;
-    left: 210px;
-    top: 1200px;
-
+.mail {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 200px;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
-.mail div{
-    position: absolute;
-    left: 210px;
-    top: 1300px;
-
-}
 
 .address i{
     font-size: 30px;
@@ -295,11 +315,13 @@ h3{
 
 }
 
-.one{
-    position: absolute;
-    top: 1447px;
-    left: 210px;
+.contact-info .address .content1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 180px;
+    align-items: flex-start;
 }
+
 
 .main-contact .map{
     border: 1px solid rgb(77, 135, 242);
@@ -320,7 +342,7 @@ footer{
     padding-left: 150px;
     padding-right: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 15px;
     padding-top: 20px;
@@ -328,6 +350,7 @@ footer{
 
 .conclude1 a{
     color: white;
+    margin-right: 50px;
 }
 
 .conclude2 a{

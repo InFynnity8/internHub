@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    width: 100%;
+    width: fit-content;
 }
 
 
@@ -656,8 +656,7 @@ ul{
 /* ourclients */
 
 .ourclients{
-    margin-right: 50px;
-    margin-left: 50px;
+ 
     padding-top: 50px;
 }
 
@@ -670,31 +669,50 @@ ul{
 
 .clients{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 1349px;
+    padding: 0px 20px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    /* background: green; */
+}
+
+.clients .client-container {
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .clients .fordak{
-    height: 190px;
-    margin-right: 50px;
+    height: 100%;
+    width: 100%;
 }
 
 .clients .goil{
-    height: 180px;
-    margin-right: 80px;
+    height: 100%;
+    width: 100%;
 }
 
 .clients .hubtel{
-    height: 80px;
+    height: 100%;
+    width: 100%;
 }
 
 .clients .calbank{
-    margin-left: 50px;
-    height: 140px;
+    height: 100%;
+    width: 100%;
 }
 
 .clients .cocoa{
-    height: 150px;
+    height: 100%;
+    width: 100%;
 }
 
 

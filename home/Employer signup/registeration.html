@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="forms">
-            <form action="">
+            <form action="#">
                 <div class="left">
                     <div class="info">
                         <label for="Job title">Job title:</label>
@@ -77,18 +77,43 @@
                         <label for="Location">Location:</label>
                         <input type="text" name="Location" placeholder="" required>
                         <label for="Service">Areas needed for service:</label>
-                        <input type="text" name="Service" placeholder="" required>
+                        <div class="innerserver">
+                            <select name="area-service" id="area-service">
+                                <option value="N/A"></option>
+                                <option value="Accounting">Accounting</option>
+                                <option value="Back-end Developer">Back-end Developer</option>
+                                <option value="Customer Service">Customer Service</option>
+                                <option value="Distribution">Distribution</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Front-end Developer">Front-end Developer</option>
+                                <option value="Human Resources">Human Resources</option>
+                                <option value="Information Technology">Information Technology</option>
+                                <option value="Legal">Legal</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="Marketing/Sales">Marketing/Sales</option>
+                                <option value="Operations">Operations</option>
+                                <option value="Procurement">Procurement</option>
+                                <option value="Production">Production</option>
+                                <option value="Research and Development">Research and Development</option>
+                                <option value="Strategy">Strategy</option>
+                                <option value="Supply Chain">Supply Chain</option>
+                                <option value="Technology and Equipment">Technology and Equipment</option>
+                                <option value="Training and Safety">Training and Safety</option>
+                                <option value="UI/UX Designer">UI/UX Designer</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
                         <label for="Duration">Duration:</label>
                         <input type="text" name="Durarion" placeholder="" required>
                     </div>
                    <div class="choice">
                         <label for="Stipend">Intern with stipend?</label> <br>
-                        <input class="choose" type="radio" name="Stipend" value="Yes" placeholder="" checked> Yes <br>
-                        <input class="choose" type="radio" name="Stipend" value="No" placeholder="" > No
+                        <input class="choose1" type="radio" name="Stipend" value="Yes" placeholder="" > Yes <br>
+                        <input class="choose2" type="radio" name="Stipend" value="No" placeholder="" > No
                     </div>
                     <div class="info">
-                        <label for="Amount">Amount (Ghc):</label>
-                        <input type="text" name="Amount" placeholder="State the amount if you wish">
+                        <label for="Amount" class="amount">Amount (Ghc):</label>
+                        <input type="text" name="Amount" placeholder="State the amount if you wish" id="amount">
                         <label for="Requirement">Intern requirement:</label>
                     </div>
                     <div class="largearea">
@@ -170,6 +195,7 @@
 
 
 
+    <script src="registeration.js"></script>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"> </script>
 </body>

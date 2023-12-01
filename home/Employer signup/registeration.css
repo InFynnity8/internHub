@@ -97,16 +97,19 @@ body{
     border-radius: 50%;
     background-image: url('/asset/lead1.jpg');
     background-size: contain;
+    margin-right: 10px;
 }
 
 .greetings{
     color: rgb(77, 135, 242);
     font-weight: 600;
+    width: 100px;
 }
 
 .profile .comp{
      color: rgb(80, 80, 80);
      font-size: 12px;
+     width: 100px;
 }
 
 .content{
@@ -122,6 +125,7 @@ body{
     margin-top: 70px;
     margin-left: 100px;
     margin-bottom: 30px;
+    width: fit-content;
 }
 
 .topsection .paragraphs{
@@ -153,7 +157,9 @@ body{
 .content  form{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    width: 1230px;
 }
 
 form label{
@@ -188,6 +194,14 @@ form .choice{
 form .choice input{
     margin-top: 10px;
     color: rgb(77, 135, 242);
+}
+
+form .info .amount {
+    display: none;
+}
+
+form .info #amount {
+    display: none;
 }
 
 form .largearea {
@@ -257,7 +271,25 @@ form .left{
 form .right{
     display: grid;
     margin-right: 130px;
-    margin-top: -10px;
+    align-items: flex-start;
+}
+
+.right .innerserver {
+    border: 1px solid rgb(77, 135, 242);
+    width: 450px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.right .innerserver select {
+    border: none;
+    outline: none;
+    margin-top: -1px;
+    padding-left: 10px;
+    padding-left: 10px;
+    width: 440px;
+    height: 35px;
+    background: transparent;
 }
 
 
