@@ -188,6 +188,10 @@ body{
     transform: scale(1.1); 
 }
 
+.search-section form button:active{
+    color: rgb(236, 83, 109);
+}
+
 
 
 .search-section div{

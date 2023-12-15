@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: fit-content;
+}
+
+
+/* navigation bar */
+
+.navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 1366px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(109, 107, 108, 0.103);
+}
+
+.logo{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+    font-weight: 900;   
+}
+
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
+.logo:hover{
+   cursor: pointer;
+}
+
+.links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 50px;
+    padding-left: 250px;
+    font-size: 1.2em;
+    font-weight: 500;
+   
+}
+
+.links a{
+    margin-right: 10px;
+    width: 120px;
+    text-decoration: none;
+    margin-left: 0px;
+    color: rgb(77, 135, 242);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.links a::after{
+    content: '';
+    width: 120px;
+    height: 3px;
+    background: rgb(236, 83, 109);
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin:center;
+    transform: scaleX(0);
+    transition: transform .5s;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+
+.chatbtn{
+    display: flex;
+    margin-left: 250px;
+    height: 30px;
+    width: 30px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.chatbtn:hover{
+    cursor: pointer;
+}
+
+.main-content{
+    height: 547px;
+    display: flex;
+}
+
+.main-content .people{
+    background: rgba(90, 145, 248, 0.082);
+    flex: 30;
+}
+
+.main-content .list {
+    height: 367px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* background: orange; */
+}
+
+.main-content .people ul {
+    list-style-type: none; 
+}
+
+.people ul li {
+    padding: 0px 30px;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    font-weight: 600;
+    
+}
+
+.people ul li:hover{
+    background: rgba(153, 153, 153, 0.349); 
+}
+
+.main-content .CV {
+    height: 100%;
+    flex: 75;
+}
+
+.title{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.title .people{
+    color: rgb(236, 83, 109);
+    font-size: 30px;
+    margin-bottom: 10px;
+    background: transparent;
+}
+
+.title input{
+    width: 340px;
+    border: none;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 60px;
+    font-size: 17px;
+    outline: none;
+    background: white;
+    box-shadow: 0px 0px 4px 0px rgba(35, 36, 37, 0.11);
+
+}
+
+.title form button{
+    position: relative;
+    right: 40px;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    top: 3px;
+    color: rgb(77, 135, 242);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.title form button:hover{
+    transform: scale(1.1); 
+}
+
+.title form button:active{
+    color: rgb(236, 83, 109);
+}
+
+
+ul li .dp{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-image: url('/asset/IMG-20231106-WA0015.jpg');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.intro {
+    /* background: olivedrab; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.507);
+}
+
+.intro .picture {
+    width: 100px;
+    height: 100px;
+    /* border-left: 50px solid black; */
+    background: url('/asset/man1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 20px;
+}
+
+.identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.identity .name {
+    font-size: 50px;
+}
+
+.identity .field {
+    align-self: center;
+    color: rgba(63, 63, 63, 0.699);
+}
+
+.CV .details {
+    display: flex;
+    line-height: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 447px;
+    
+}
+
+.details .left {
+    flex: 1;
+    padding: 20px 50px;
+}
+
+.details .right {
+    flex: 1;
+    padding: 20px 50px;
+}
+
+.details .head{
+    margin: 20px 0px 10px 0px;
+    background: black;
+    text-align: center;
+    color: white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.details .right ul {
+    padding-left: 20px;
+}
+
+.details .right .contact i{
+    font-size: 25px;
+    margin-right: 10px;
+}

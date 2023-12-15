@@ -14,7 +14,7 @@ body{
 
 .navbar{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 1349px;
     height: 50px;
     display: flex;
@@ -96,6 +96,7 @@ body{
     height: 30px;
     width: 30px;
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .chatbtn:hover{
@@ -187,6 +188,22 @@ footer{
     font-size: 13px;
 }
 
+.changepic{
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    background: rgb(77, 135, 242);
+    top: 90px;
+    left: 90px;
+}
+
 .profilepic{
     margin-top: 20px;
     height: 120px;
@@ -246,6 +263,7 @@ footer{
 .businessdetails{
     opacity: .6;
     font-size: 14px;
+    margin-right: 50px;
 }
 
 .businessdetails.active{
@@ -259,18 +277,53 @@ footer{
     margin-right: 350px;
 }
 
-.requestbtn{
-    color: white;
+.requestbtn1{
     font-size: 15px;
-    background: rgb(236, 75, 102);
-    border: none;
-    width: 180px;
+    background: transparent;
+    border: 1px solid rgb(77, 135, 242);
+    width: 200px;
     height: 30px;
     border-radius: 20px;
-    margin-left: 250px;
+    margin-left: 10px;
+    transition: .3s;
 }
 
-.requestbtn:hover{
+.requestbtn1 a {
+    color: rgb(77, 135, 242);
+    transition: .3s;
+}
+
+.requestbtn1 a:hover {
+    color: white;
+}
+
+
+.requestbtn2{
+    color: rgb(77, 135, 242);
+    font-size: 15px;
+    background: transparent;
+    border: 1px solid rgb(77, 135, 242);
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background: rgb(236, 83, 109); 
+    border:1px solid rgb(236, 83, 109);
+    transition: .3s;
+}
+
+.requestbtn2 a{
+    color: white;
+   
+}
+
+.requestbtn1:hover{
+    cursor: pointer;
+    color: white;
+    background: rgb(77, 135, 242);
+}
+
+.requestbtn2:hover{
     cursor: pointer;
 }
 
