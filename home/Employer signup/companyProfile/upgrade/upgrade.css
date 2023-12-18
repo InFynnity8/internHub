@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: fit-content;
+}
+
+
+/* navigation bar */
+
+.navbar{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: left; 
+}
+
+.logo img{
+    margin-left: 60px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.logo img:hover{
+   cursor: pointer;
+}
+
+.links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+    padding-left: 180px;
+    font-size: 1.2em;
+    font-weight: 500;
+   
+}
+
+.links a {
+    width: 120px;
+    text-decoration: none;
+    color: rgb(77, 135, 242);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+
+.links a::after{
+    content: '';
+    width: 120px;
+    height: 3px;
+    background: rgb(236, 83, 109);
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin:center;
+    transform: scaleX(0);
+    transition: transform .5s;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.content{
+    margin-left: 55px;
+}
+
+.route{
+    background: rgb(77, 135, 242);
+    width: 690px;
+    margin-top: 60px;
+    height: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.route .circle{
+    background: white;
+    height: 15px;
+    width: 15px;
+    border: 2px solid rgb(77, 135, 242);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.circle .bubble1{
+    background: rgb(236, 83, 109);
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    transition: transform .2s ease;
+}
+
+.bubble1.active{
+    transform: scale(0);
+    transition: transform .2s ease;
+}
+
+.circle .bubble2{
+    background: rgb(236, 83, 109);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform .2s ease;
+}
+
+.bubble2.active{
+    height: 7px;
+    width: 7px;
+    transform: scale(1);
+}
+
+.circle .bubble3{
+    background: rgb(236, 83, 109);
+    transform: scale(0);
+    border-radius: 50%;
+    transition: transform .2s ease;
+}
+
+.bubble3.active{
+    height: 7px;
+    width: 7px;
+    transform: scale(1);
+}
+
+.router{
+    font-size: 14px;
+    width: 760px;
+    margin-top: 15px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(77, 135, 242);
+}
+
+
+.maincontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+
+}
+
+.maincontent .heading{
+    color: rgb(77, 135, 242);
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.maincontent .heading2{
+    color: rgb(77, 135, 242);
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.slider{
+    display: flex;
+    width: 650px;
+    overflow: hidden;
+}
+
+.packageupgrage1{
+    height: 500px;
+    width: 580px;
+    padding-top: 60px;
+    transition: transform .2s ease;
+    transform: translateX(0);
+}
+
+
+.packageupgrage1 .package label {
+    font-size: 20px;
+}
+
+.packageupgrage1.action{
+    transform: translateX(-660px);
+}
+
+.packageupgrage2{
+    height: 500px;
+    width: 580px;
+    padding-top: 60px;
+    transform: translateX(100px);
+    transition: transform .2s ease;
+}
+
+.packageupgrage2.action{
+    transition: transform .2s ease;
+    transform: translateX(-580px);
+}
+
+.packageupgrage2.action2{
+    transition: transform .2s ease;
+    transform: translateX(-1920px);
+}
+
+.packageupgrade3{
+    height: 440px;
+    min-width: 630px;
+    padding-top: 60px;
+    transform: translateX(-480px);
+    transition: transform .2s ease;
+}
+
+.packageupgrade3.action{
+    transform: translateX(-1140px);
+}
+
+.packageupgrade3 .topic{
+    color: rgb(50, 158, 3);
+    font-size: 22px;
+    margin-bottom: 27px;
+    margin-left: 50px;
+} 
+
+.packageupgrade3 .subtopic{
+    color: rgb(56, 121, 242);
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+} 
+
+.packageupgrade3 i{
+    position: absolute;
+    color: rgb(50, 158, 3);
+    font-size: 60px;
+    top: 40px;
+    right: 590px;
+}
+
+.packageupgrade3 p{
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+}
+
+.paymentsummary{
+    display: flex;
+    width: 610px;
+    height: 185px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(238, 232, 232);
+    box-shadow: 3px 3px 4px 1px rgb(192, 190, 190);
+}
+
+.elements{
+    width: 230px;
+    height: 185px;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    color: rgb(93, 92, 92);
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.elements p{
+    color: rgb(79, 78, 78);
+    
+}
+
+.values{
+    height: 185px;
+    width: 230px;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.values p{
+    color: black;
+    font-weight: 500;    
+}
+
+.donebtn{
+    height: 40px;
+    width: 200px;
+    margin-left: 410px;
+    border: none;
+    background: rgb(30, 101, 233);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.donebtn:hover{
+    cursor: pointer;
+    background: rgb(53, 97, 180);
+}
+
+.package{
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+    height: 200px;
+}
+
+.package p{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(119, 119, 119);
+}
+
+.package label{
+    color: rgb(77, 135, 242);
+}
+
+.package input{
+    margin-bottom: 15px;
+    accent-color:  rgb(77, 135, 242);
+}
+
+.package input:hover{
+    cursor: pointer;
+}
+
+.payments{
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    transition: transform .2s ease;
+}
+
+.payments.active{
+    transform: translateX(-670px);
+}
+
+
+.payment1{
+    width: 580px;
+}
+
+.payment2{
+    width: 580px;
+}
+
+.payment1 i{
+    font-size: 30px;
+    color:rgb(77, 135, 242);
+    position: absolute;
+    left: 20px;
+    top: 120px;
+}
+
+.payment2 i{
+    font-size: 30px;
+    color:rgb(77, 135, 242);
+    position: absolute;
+    left: 690px;
+    top: -7px;
+}
+
+
+.moneydiv{
+    color: black;
+    background: rgb(107, 177, 214);
+    height: 32px;
+    width: 120px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.card{
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.momo{
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.card2{
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.momo2{
+    margin-left:180px;
+    cursor: pointer;
+}
+
+.entry{
+    display: grid;
+}
+
+.entry2{
+    display: grid;
+}
+
+.entry2 label{
+    font-size: 13px;
+    color: rgb(132, 132, 132);
+    margin-bottom: 5px;
+}
+
+.entry2 input{
+    width: 180px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.entry2 select{
+    width: 175px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: -1px;
+    margin-left: -1px;
+    background: transparent;
+}
+
+.entry2 .net{
+    width: 180px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+   
+}
+
+.entry input{
+    border: none;
+    border-bottom: 1px solid rgb(169, 169, 169);
+    padding-bottom: 5px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+}
+
+.expiry{
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry input{
+    width: 230px;
+}
+
+.card2{
+    color: rgb(77, 135, 242);
+}
+
+#momo2{
+    color: rgb(77, 135, 242);
+}
+
+.payment1 label{
+    color: rgb(77, 135, 242);
+}
+
+.continuebtn1{
+    height: 40px;
+    width: 200px;
+    margin-left: 380px;
+    border: none;
+    background: rgb(30, 101, 233);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.continuebtn1:hover{
+    cursor: pointer;
+    background: rgb(53, 97, 180);
+}
+
+.btns{
+    display: flex;
+    margin-top: 15px;
+}
+
+.continuebtn2{
+    height: 40px;
+    width: 200px;
+    margin-left: 30px;
+    border: none;
+    background: rgb(30, 101, 233);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.continuebtn2:hover{
+    cursor: pointer;
+    background: rgb(53, 97, 180);
+}
+
+.backbtn{
+    height: 40px;
+    width: 150px;
+    margin-left: 200px;
+    border: 1px solid rgb(30, 101, 233);
+    background: transparent;
+    color: rgb(30, 101, 233);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.backbtn:hover{
+    cursor: pointer;
+    background: rgb(30, 101, 233);
+    color: white;
+}
+
+.imagesection{
+    background: url('/asset/completed.jpg');
+    background-size: contain;
+    height: 500px;
+    width: 500px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: -1;
+}

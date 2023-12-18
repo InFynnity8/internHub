@@ -109,8 +109,38 @@ body{
     height: 600px;
 }
 
+#business_form {
+    display: flex;
+}
+
+.rapper {
+    outline: none;
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 20px;
+    width: 350px;
+    height: 35px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.inner {
+    outline: none;
+    border: none;
+    min-width: 320px;
+    height: 35px;
+    overflow: hidden;
+    background: transparent;
+}
+
 form{
     display: grid;
+    padding-bottom: 20px;
+}
+
+.forms p {
+    margin-bottom: 30px;
 }
 
 form label{
@@ -125,6 +155,7 @@ form input{
     width: 350px;
     height: 35px;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 form .registerbtn{

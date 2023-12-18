@@ -37,22 +37,24 @@
             
             </div>
 
-            <form action="#">
+            <form >
               <div class="nameEmail">
                 <span class="data">
-                    <label for="Email" >Email</label>
-                    <input type="email" name="Email" placeholder="internguy@example.com" required >
+                    <label for="email" >Email</label>
+                    <input type="email" name="email" id="email" placeholder="internguy@example.com" required >
                 </span>
             </div>
             
             <div class="pass">
                 <div class="data">
-                    <label for="Password">Password</label>
-                    <input type="password" name="Password" placeholder="Password" required><ion-icon name="eye" class="eye"></ion-icon>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <ion-icon name="eye" class="eye"></ion-icon>
+                    <ion-icon name="eye-off" class = "eye-off"></ion-icon>
                 </div>
             </div>
             <a href="">Forget your password?</a>
-                <button class="signupbtn"><a href="/home/signup/userhome/userhome.html"
+                <button class="signupbtn"><a href="#"
                     style="text-decoration: none; color: white; 
                      padding: 10px; padding-left: 40px; padding-right: 40px;">Login </a></button>
             </form>
@@ -61,12 +63,17 @@
                 <span class="orline"></span><p>OR</p><span class="orline"></span>
             </div>
             <div class="alt">
-                
-                <button class="fb"><i class='bx bxl-facebook-circle'></i>Continue with Facebook</button>
-                <button class="google"> <img src="/asset/search.png" width="23px" alt=""> Continue with Google</button>
+                <div class="fb-gb-validation">
+
+                    <button class="fb"><i class='bx bxl-facebook-circle'></i>Continue with Facebook</button>
+                    <button class="google"> <img src="/asset/search.png" width="23px" alt=""> Continue with Google</button>
+                </div>
 
                 <a href="/home/signup/signup.html">Don't Have account? Sign up</a>
-                <span></span>
+                 <div class="line">
+
+                     <div class="divi"></div>
+                 </div>
                 <p>By continuing, you agree to InternHub's
                     Terms of Service and acknowledge you have read our
                     Privacy Policy</p>
@@ -74,6 +81,7 @@
         </div>
     </div>
 
+    <script src="signin.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

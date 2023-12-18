@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | Employer</title>
     <link rel="stylesheet" href="employ.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/asset/layer.ico">
 </head>
 <body>
@@ -13,10 +15,10 @@
             <img src="/asset/Layer 2.png" width ="150px" alt="">
         </div>
         <div class="links">
-            <a href="/home/Employer signup/comphome/userhome.html" >Home</a>
-            <a href="/home/Employer signup/cv/cv.html" >Applicants</a>
-            <a href="/home/Employer signup/compAbout/userAbout.html" >About Us</a>
-            <a href="/home/Employer signup/compContact/userContact.html">Contact Us</a>
+            <a href="/home/home.html" >Home</a>
+            <a href="/Intern/intern.html" >Intern</a>
+            <a href="/about/about.html" >About Us</a>
+            <a href="/contact/contact.html">Contact Us</a>
         </div>
     
 
@@ -28,24 +30,46 @@
         </div>
         <div class="forms">
             <p>Hello, sign up as an organization and Let's work together</p>
-            <form action="">
-                <label for="Name">Name:</label>
-                <input type="text" name="Name" placeholder="" required>
-                <label for="Email">Email:</label>
-                <input type="email" name="Email" placeholder="" required>
-                <label for="Company's Name">Company's Name:</label>
-                <input type="text" name="Company's Name" placeholder="" required>
-                <label for="Phone Number">Phone Number:</label>
-                <input type="" name="Phone Number" placeholder="" required>
-                <label for="Location">Location:</label>
-                <input type="text" name="Location" placeholder="" required>
+            <form id="form">
+                <label for="manager_name">Manager's Name:</label>
+                <input type="text" name="manager_name" id="manager_name" placeholder="" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="" required>
+                <label for="company_name">Company's Name:</label>
+                <input type="text" name="company_name" id="company_name" placeholder="" required>
+                <label for="type_of_organization">Type of Business:</label>
+                <input type="text" name="type_of_organization" id="type_of_organization" placeholder="" required>
+                <label for="phone_number">Phone Number:</label>
+                <input type="" name="phone_number" id="phone_number" placeholder="" required>
+                <label for="location">Location:</label>
+                <input type="text" name="location" id="location" placeholder="" required>
+                <label for="bussiness_form">Business Form:</label>
+                <div class="rapper">
+                    <div class="inner">
+                        <input type="file" accept=".pdf" id="business_form" 
+                        style=" background: transparent;
+                        display: flex; width: 460px; position: relative;
+                        left: -125px; padding-top: 5px; border: none;"
+                        required >
+                    </div>
+                        <i class='bx bxs-file-export' 
+                            style="color: rgb(77, 135, 242);
+                            font-size: 20px;
+                            padding-top: 6px;
+                            padding-right: 7px;
+                            position: relative;
+                            right: 20px;
+                            cursor: pointer; z-index: -1;"></i>
+                </div>
 
-                <button class="registerbtn"> <a href="/home/Employer signup/companyProfile/companyprofile.html"> Register </a> </button>
+                <button class="registerbtn"> <a href="#"> Register </a> </button>
             </form>
         </div>
     </div>
 
 
-    
+    <script src="employ.js"></script>
 </body>
 </html>

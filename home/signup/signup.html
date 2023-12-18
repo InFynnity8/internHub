@@ -37,29 +37,29 @@
                 <p>find your dream company to intern here.</p>
             </div>
 
-            <form action="#">
+            <form id="sigupForm">
               <div class="nameEmail">
                 <span class="data" id="Fullname">
-                    <label for="Fullname" class="Fullname">Full Name</label>
-                    <input type="text" name="Fullname" class="Fullname" required >
+                    <label for="full_name" class="Fullname">Full Name</label>
+                    <input type="text" name="full_name" id="full_name" required >
                 </span>
                 <span class="data">
-                    <label for="Email" >Email Address</label>
-                    <input type="email" name="Email" required >
+                    <label for="email" >Email Address</label>
+                    <input type="email" name="email" id="email" required >
                 </span>
                </div>
             
                 <div class="pass">
                     <span class="data" id="pass">
-                        <label for="cPassword">Create Password</label>
-                        <input type="password" name="cPassword" required >
+                        <label for="password">Create Password</label>
+                        <input type="password" name="password" id="password" required >
                     </span>
                     <span class="data">
-                        <label for="Password">Confirm Password</label>
-                        <input type="password" name="Password" required>
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
                     </span>
                 </div>
-                <button class="signupbtn"> <a href="/home/signup/userhome/userhome.html"
+                <button class="signupbtn"> <a href="#"
                     style="text-decoration: none; color: white; 
                      padding: 10px; padding-left: 40px; padding-right: 40px;">Sign Up </a></button>
             </form>
@@ -81,6 +81,8 @@
         </div>
     </div>
 
+
+    <script src="signup.js"></script>
 
 </body>
 </html>

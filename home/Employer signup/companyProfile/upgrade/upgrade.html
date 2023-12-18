@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade</title>
+    <link rel="stylesheet" href="upgrade.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/asset/layer.ico">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="/asset/Layer 2.png" width ="150px" alt="">
+        </div>
+        <div class="links">
+            <a href="/home/Employer signup/comphome/userhome.html" >Home</a>
+            <a href="/home/Employer signup/cv/cv.html" >Applicants</a>
+            <a href="/home/Employer signup/compAbout/userAbout.html" >About Us</a>
+            <a href="/home/Employer signup/compContact/userContact.html">Contact Us</a>
+        </div>
+      
+    </div>  
+
+    <div class="content">
+        <div class="route">
+            <div class="circle"><div class="bubble1"></div></div>
+            <div class="circle"><div class="bubble2"></div></div>
+            <div class="circle"><div class="bubble3"></div></div>
+        </div>
+        <div class="router">
+            <p>Package</p> <p>Payment Details</p> <p>Confirmation</p>
+        </div>
+
+        <div class="maincontent">
+
+            
+            <div class="slider">
+                <!-- package section -->
+                
+                <div class="packageupgrage1">
+                    <p class="heading">Welcome to our upgraded partner program - your gateway to enhanced collaboration and mutual success.</p>
+
+                    <div class="package">
+                        <div class="standard">
+                           
+                            <label for="package">Partnership</label>
+                            <p>Explore a transformative partnership with our company, 
+                                where collaboration is key to unlocking unparalleled benefits. 
+                                Enjoy enhanced support, exclusive resources, and synergistic growth opportunities, 
+                                as we work together to achieve shared success in a dynamic and thriving partnership ecosystem.</p>
+
+                            <div class="moneydiv" >GHC ***</div>
+                        </div>
+                 
+                    </div>
+                    <button class="continuebtn1">Continue</button>
+                </div>
+
+
+                <!-- payment details section -->
+
+                <form class="packageupgrage2">
+                    <p class="heading">Please select your preferred Payment method</p>
+
+                    <div class="payments">
+                     <!-- pay by debit card -->
+
+                        <div class="payment1">
+                            <input type="radio" name="paymentMethod1" class="card" checked>
+                            <i class='bx bxs-credit-card'></i> <label for="paymentMethod1"> Debit Card</label>
+
+
+                            <input type="radio" name="paymentMethod1" class="momo">
+                            <label for="paymentMethod1">Mobile Money</label>
+
+                            <p class="heading2">Payment Details</p>
+
+        
+                                <div class="entry">
+
+                                    <input type="text" placeholder="Cardholder Name" required>
+                                    <input type="text" placeholder="Card Number" required> <img src="/asset/visa.png" width="30px" height="25px" alt=""
+                                    style="position: absolute;
+                                    left: 535px;
+                                    top: 265px;">
+                                    <div class="expiry">
+                                        <input type="text" placeholder="Expiration Date" required><input type="text" placeholder="CVV Code" required>
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+
+
+                        <!-- pay by mobile money -->
+
+                        <div class="payment2">
+                            <input type="radio" name="paymentMethod2" class="card2">
+                            <i class='bx bxs-credit-card'></i><label for="paymentMethod2" class="card2">  Debit Card</label>
+
+
+                            <input type="radio" name="paymentMethod2" class="momo2" checked>
+                            <label for="paymentMethod2" id="momo2">Mobile Money</label>
+                            <div style="display: flex; justify-content: center;align-items: center; 
+                             width: 200; position: absolute;left: 1148px; top: -15px;">
+                                <img src="/asset/momo.png" width="60px" height="30px" alt="">
+                                <img src="/asset/at.png" width="50px" height="50px" alt="">
+                                <img src="/asset/vodacash.png" width="35px" height="20px" alt="">
+                            </div>
+                            <p class="heading2">Payment Details</p>
+
+                            <div class="entry2">
+                                <label for="network">Select Network</label>
+                                <div class="net">
+                                <select name="network" id="network">
+                                    <option value="MTN">MTN</option>
+                                    <option value="Vodafone">Vodafone</option>
+                                    <option value="AT">at</option>
+                                </select>
+                                </div>
+                                <label for="number">Number</label>
+                                <input type="text" required>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="btns">
+                        <button class="backbtn">Back</button>
+                        <button class="continuebtn2">Continue</button>
+                    </div>
+                </form>
+
+
+                <!-- confirmation section -->
+
+                <div class="packageupgrade3">
+                    <i class='bx bxs-check-circle'></i><p class="topic">Payment confirmed</p>
+                    <p>Thank you, your payment has been successful and your account will be upgraded soon.
+                        A confirmation email has been sent to internhub@email.com</p>
+                    <p class="subtopic">Payment Summary</p>
+                    <div class="paymentsummary">
+                        <div class="elements">
+                            <p>Package:</p>
+                            <p>Payment Mode:</p>
+                            <p>Number:</p>
+                            <p>Amount Paid:</p>
+                            <p>Total Price:</p>
+                        </div>
+                        <div class="values">
+                            <p>Standard</p>
+                            <p>Mobile Money</p>    <img src="/asset/momo.png" width="60px" height="30px" alt=""
+                            style="position: absolute;
+                            left: 330px; bottom: 170px;">
+                            <p>#####</p>
+                            <p>GHC ***</p>
+                            <p>GHC ***</p>
+                        </div>
+
+                    </div>
+                    <button class="donebtn"> <a href="/home/Employer signup/comphome/userhome.html"
+                        style="text-decoration: none; color: white;
+                        padding: 10px; padding-left: 80px; padding-right: 80px; 
+                      ">Done</a> </button>
+
+                </div>
+
+            </div>
+
+            <div class="imagesection">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="upgrade.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"> </script>
+</body>
+</body>
+</html>
