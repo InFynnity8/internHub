@@ -108,7 +108,7 @@ body{
     cursor: pointer;
 }
 
-.changepic{
+.upload{
     border-radius: 50%;
     border: 2px solid white;
     height: 32px;
@@ -117,11 +117,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
     color: white;
     background: rgb(77, 135, 242);
     top: 90px;
     left: 90px;
+    z-index: 2;
+}
+
+
+
+.profilepic input[type=file] {
+    font-size: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
 }
 
 .profilecontent{
@@ -213,11 +229,23 @@ footer{
 .profilepic{
     margin-top: 20px;
     height: 120px;
-    background: url('/asset/man1.webp');
+    background: url('/asset/prodef.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 120px;
     border-radius: 50%;
+    border: 1px solid rgb(77, 135, 242);
+    
+}
+
+.profilepic img {
+    width: 119px;
+    height: 119px;
+    border-radius: 50%;
+    position: relative;
+    top: -33px;
+    left: -1px;
+   
 }
 
 .details{
@@ -318,6 +346,17 @@ footer{
 }
 
 .updatebtn:hover{
+    background: rgb(28, 104, 245);
+}
+
+.updatebtn1{
+    color: white;
+    border: none;
+    background: rgb(77, 135, 242);
+    transition: .3s;
+}
+
+.updatebtn1:hover{
     background: rgb(28, 104, 245);
 }
 
@@ -540,6 +579,57 @@ form .signupbtn:hover{
 
 /* popup */
 
+.upload-popscreen{
+    position: absolute;
+    left: 500px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(146, 146, 146, 0.52);
+    width: 1349px;
+    height: 707px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: .5s;
+    z-index: 2;
+}
+
+.upload-popscreen.action{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(146, 146, 146, 0.52);
+    width: 1349px;
+    height: 707px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.upload-popup{
+    border: 1px solid rgb(77, 135, 242);
+    height: 350px;
+    background: white;
+    border-radius: 7px;
+    width: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.upload-popup p{
+    text-align: center;
+}
+
 .popscreen{
     position: absolute;
     left: 0;
@@ -615,6 +705,23 @@ form .signupbtn:hover{
     color: white;
 }
 
+.confirm{
+    background: white;
+    color: rgb(77, 135, 242);
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.confirm:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+    color: white;
+}
+
 .yes a{
     color: rgb(77, 135, 242); 
     text-decoration: none;
@@ -643,6 +750,23 @@ form .signupbtn:hover{
 }
 
 .no:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+}
+
+.cancel{
+    margin-left: 10px;
+    background: rgb(77, 135, 242);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.cancel:hover{
     cursor: pointer;
     background: rgb(28, 104, 245);
 }

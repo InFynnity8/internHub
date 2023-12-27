@@ -123,7 +123,7 @@ body{
 
 .main{
     display: flex;
-    margin-right: 120px;
+    margin-right: 0px;
     margin-left: 120px;
     height: 600px;
     margin-bottom: 40px;
@@ -257,7 +257,7 @@ form .signupbtn:hover{
     text-align: center;
     font-size: 20px;
     margin-bottom: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .signupsection .title p{
@@ -278,8 +278,7 @@ form .signupbtn:hover{
     height: 1px;
     width: 170px;
     background: rgb(77, 135, 242);
-    margin-right: 5px;
-    margin-left: 5px;
+    margin:20px 5px;
 }
 
 .alt{
@@ -362,4 +361,5 @@ form .signupbtn:hover{
     font-size: 12px;
     margin-left: 180px;
     margin-right: 180px;
+    width: 250px;
 }

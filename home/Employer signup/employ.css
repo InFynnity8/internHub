@@ -99,7 +99,7 @@ body{
     background-repeat: no-repeat;
     width: 690px;
     height: 490px;
-    margin-top: 5px;
+    margin-top: 100px;
 }
 
 .content  .forms{
@@ -166,8 +166,8 @@ form .registerbtn{
     border-radius: 20px;
     width: 130px;
     height: 35px;
-    margin-left: 220px;
     transition: .5s;
+    font-size:18px;
 }
 
 form .registerbtn a{
@@ -191,6 +191,31 @@ form .registerbtn:hover{
     font-size: 21px;
     color: rgb(77, 135, 242);
 }
+
+.forms .below {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.forms .below p{
+    margin-top: 30px;
+    padding: 0px;
+    font-size: 20px;
+    border-radius: 20px;
+    width: px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms .below p a {
+    color: black;
+    font-size: 16px;
+}
+
+
 
 
 

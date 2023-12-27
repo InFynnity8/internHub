@@ -16,7 +16,7 @@ signUpBtn.addEventListener ( 'click', () => {
     }
     
 
-    const endPoint = 'https://internhubtest.onrender.com/auth/user-registration';
+    const endPoint = 'https://internhub-test.up.railway.app/auth/user-registration';
 
     fetch(endPoint, {
         method: 'POST',

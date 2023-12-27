@@ -334,6 +334,10 @@ select{
     font-size: 0.9em;
 }
 
+.description {
+    height: 205px;
+}
+
 .description p{
     font-size: 1em;
     margin-bottom: 5px;

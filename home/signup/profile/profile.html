@@ -34,8 +34,13 @@
         <div class="currentprofile">
             <div class="pic">
                 <div class="profilepic">
-
-                    <div class="changepic"><i class='bx bxs-camera-plus'></i></div>
+                    <div class="upload">
+                        <form id="picture-form">
+                            <input type="file" accept=".png, .jpeg, .jpg" class="changepic">
+                            <i class='bx bxs-camera-plus'></i></input>
+                        </form>
+                    </div>
+                    <img src="#" alt="" id="myImage">
                 </div>
                 <div>
                     <p>Basic Package</p>
@@ -79,20 +84,20 @@
                     color: white;">View Summary</a></button>
             </div>
 
-            <form action="#">
+            <form id="update-form">
                 <div class="personalpage">
                     <div class="nameEmail">
                       <span class="data" id="Fullname">
                           <label for="Firstname" class="Firstname">First Name:</label>
-                          <input type="text" name="Firstname" class="Firstname" required >
+                          <input type="text" name="Firstname" class="firstname" >
                           <label for="Phonenumber" class="Phonenumber">Phone Number:</label>
-                          <input type="text" name="Phonenumber" class="Phonenumber" required >
+                          <input type="text" name="Phonenumber" class="phonenumber" >
                       </span>
                       <span class="data">
                         <label for="Lastname" class="Lastname">Last Name:</label>
-                        <input type="text" name="Lastname" class="Lastname" required >
+                        <input type="text" name="Lastname" class="lastname" >
                           <label for="Email" >Email Address:</label>
-                          <input type="email" name="Email" required >
+                          <input type="email" name="Email" class="email" >
                       </span>
                     </div>
 
@@ -100,7 +105,7 @@
                           <span class="data" id="pass">
                             <label for="Region" class="Region">Region:</label>
                             <div class="regional">
-                                <select name="Region" id="region" required>
+                                <select name="Region" id="region" >
                                     <option value="N/A"></option>
                                     <option value="Ahafo">Ahafo</option>
                                     <option value="Ashanti">Ashanti </option>
@@ -123,7 +128,7 @@
                           </span>
                           <span class="data">
                             <label for="City" class="City">City or Town:</label>
-                            <input type="text" name="City" class="City" required >
+                            <input type="text" name="City" class="city" >
                           </span>
                       </div>
                       <div class="btns">
@@ -142,7 +147,7 @@
                       <span class="data" id="Fullname">
                           <label for="University" class="University">University:</label>
                           <div class="uni">
-                            <select name="University" id="University" required>
+                            <select name="University" id="university" >
                                 <option value="N/A"></option>
                                 <option value="Accra Institute of Technology">Accra Institute of Technology</option>
                                 <option value="Accra Technical University">Accra Technical University</option>
@@ -212,7 +217,7 @@
                           </div>
 
                           <label for="Program" class="Program">Program:</label>
-                          <input type="text" name="Program" class="Program" required >
+                          <input type="text" name="Program" class="program" >
                       </span>
                       <span class="data">
                         <label for="Level" class="Level">Level:</label>
@@ -250,22 +255,8 @@
                     <div class="pass">
                           <span class="data" id="pass">
                             <div class="new1">
-                                <label for="CV" >Upload your CV or Resume:</label>
-                                <div class="resume">
-                                    <div class="inner">
-                                        <input type="file" accept="image/*" name="Certificate" class="Certificate" placeholder="picture or document form" 
-                                        style=" 
-                                        width: 475px;
-                                        margin-top: -10px;
-                                        margin-left: -111px;
-                                        border: none;
-                                        padding-bottom: 30px;
-                                        background: transparent;
-                                        padding-right: 100px;
-                                        cursor: pointer; 
-                                        " required >
-                                    </div>
-                                </div> 
+                                <label for="portfolio_link" >Paste your portfolio link:</label>
+                                <input type="text" name="portfolio_link" placeholder="link to your website or file"> 
                                 <i class='bx bxs-camera-plus'
                                 style="color: rgb(77, 135, 242);
                                 font-size: 20px;
@@ -280,7 +271,7 @@
                                     <label for="CoverLetter" class="CoverLetter" >Upload your Cover or Internship Letter:</label>
                                     <div class="cert">
                                         <div class="inner">
-                                            <input type="file" name="Certificate" class="Certificate" placeholder="picture or document form" 
+                                            <input type="file" name="Certificate" class="Certificate" id="cover_letter" placeholder="picture or document form" 
                                             style=" 
                                             width: 475px;
                                             margin-top: -10px;
@@ -290,7 +281,7 @@
                                             background: transparent;
                                             padding-right: 100px;
                                             cursor: pointer;  
-                                            "required >
+                                            " >
                                         </div>
                                     </div> 
                                     <i class='bx bxs-file-export'
@@ -305,7 +296,7 @@
                           </span>
                     </div>
                       <div class="btns">
-                        <button class="updatebtn">Update </button>
+                        <button class="updatebtn1">Update </button>
                         <button class="previousbtn" style="padding-left: 10px;"><i class='bx bx-chevron-left'
                             style="font-size: 28px;
                             position: absolute;
@@ -337,7 +328,19 @@
     </div>
     
 
-    <!-- popup  -->
+    <!-- popups  -->
+
+    <div class="upload-popscreen">
+        <div class="upload-popup">
+            <p>Are you sure you want to use this as your profile?
+            </p>
+            <div class="btn">
+                <button class="confirm">Confirm</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+
+    </div>
 
     <div class="popscreen">
         <div class="popup">

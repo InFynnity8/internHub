@@ -102,7 +102,7 @@ body{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-image: url('/asset/lead1.jpg');
+    background-image: url('/asset/prodef.jpg');
     background-size: contain;
 }
 
@@ -215,6 +215,152 @@ body{
     font-size: 25px;
 }
 
+.apply-popscreen{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(146, 146, 146, 0.52);
+    width: 100%;
+    height: 810px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: .5s;
+}
+
+.apply-popscreen.action{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(146, 146, 146, 0.52);
+    width: 1349px;
+    height: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.apply-popup{
+    margin-top: 90px;
+    border: 1px solid rgb(77, 135, 242);
+    height: 470px;
+    background: white;
+    border-radius: 7px;
+    width: 800px;
+    display: grid;
+    /* flex-direction: column; */
+    padding: 50px;
+}
+
+.apply-popup .topic {
+    color: rgb(77, 135, 242);
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.apply-popup form {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apply-popup .btns2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+}
+
+.submitbtn2{
+    height: 35px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 20px;
+    color: black;
+    background: rgb(77, 135, 242);
+    font-size: 16px;
+    transition: .5s;
+}
+
+.submitbtn2:hover{
+    cursor: pointer;
+    background: rgb(28, 104, 245);
+}
+
+.backbtn2{
+    height: 35px;
+    width: 120px;
+    border: 2px solid rgb(77, 135, 242);
+    border-radius: 25px;
+    color: rgb(77, 135, 242);
+    font-size: 16px;
+    background: transparent;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backbtn2:hover{
+    cursor: pointer;
+    background: rgb(77, 135, 242);
+    color: white;
+}
+
+.apply-popup label {
+    color: rgb(77, 135, 242);
+    margin-top: 10px;
+    display: flex;
+}
+
+.apply-popscreen .resume{
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    overflow: hidden;
+    margin-top: 10px;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.apply-popscreen .inner{
+    border: none;
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    overflow: hidden;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-left: 9px;
+    padding-top: 6px;
+    padding-left: 24px;
+}
+
+#portfolio_link {
+    border: 1px solid rgb(77, 135, 242);
+    border-radius: 30px;
+    height: 35px;
+    width: 350px;
+    overflow: hidden;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin-bottom: -10px;
+    padding: 0px 13px;
+    margin-top: -10px;
+}
+
 .popscreen{
     position: absolute;
     left: 0;
@@ -308,7 +454,7 @@ body{
 }
 
 .popup2{
-    margin-top: 40px;
+    margin-top: 90px;
     border: 1px solid rgb(77, 135, 242);
     height: 470px;
     background: white;
@@ -334,7 +480,7 @@ body{
 .popup2 p{
     text-align: center;
     font-size: 13px;
-    margin-bottom: 45px;
+    margin-bottom: 45px; 
 }
 
 .popup2 .topic{
