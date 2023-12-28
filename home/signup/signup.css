@@ -128,6 +128,7 @@ body{
     margin-left: 120px;
     height: 600px;
     margin-bottom: 40px;
+    width: 1200px;
 }
 
 
@@ -144,7 +145,7 @@ body{
 .main .signupimage img{
     position: absolute;
     width: 400px; 
-    height: 400px;
+    height: 450px;
     top: 120px;
     left: 90px;
 }
@@ -155,9 +156,11 @@ body{
     align-items: center;
     border: 2px solid rgb(77, 135, 242);
     border-radius: 20px;
-    width: 900px;
-    margin-left: 150px;
+    width: 700px;
+    margin-left: 100px;
     color: rgb(77, 135, 242);
+    margin-right: 50px;
+    padding-top: 20px;
 }
 
 .signupsection form{
