@@ -3,7 +3,7 @@ const registerBtn = document.querySelector('.registerbtn');
 
 
 registerBtn.addEventListener ( 'click', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     
     const businessFormInput = document.getElementById('business_form');
    

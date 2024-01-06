@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to internHub</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        @keyframes spin {
+            from {
+                opacity: 0;
+                top: -50px;
+            }
+            
+            to {
+                top: 0px;
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+          
+        }
+
+        .main {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            position: absolute;
+            top:360px;
+            width: 120px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            background:  rgb(77, 135, 242);
+            transition: .3s;
+        }
+
+        button:hover{
+            background: rgb(236, 83, 109);
+        }
+
+        img {
+            z-index: -1;
+            animation: spin  2s linear;
+            position: relative;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 style=" position: absolute;
+        top: 100px; color: rgb(77, 135, 242); font-size: 50px;">Welcome To</h1>
+        <img src="/asset/Dp.jpg" alt="" width="650px">
+        <button class="startbtn"><a href="/home/home.html"
+            style="text-decoration: none; color: white;
+            padding: 20px 20px;">Get started</a></button>
+    </div>
+    
+</body>
+</html>

@@ -207,12 +207,12 @@ footer{
 .profilepic{
     margin-top: 20px;
     height: 120px;
-    background: url('/asset/goil.png');
+    background: url('/asset/prodef.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 120px;
     border-radius: 50%;
-    border: 1px solid rgb(219, 85, 36);
+    border: 1px solid rgb(77, 135, 242);
 }
 
 .details{

@@ -1,21 +1,17 @@
 
-const logInBtn = document.querySelector('.signupbtn');
-const passwordInput = document.querySelector('#password');
-const eyeButton = document.querySelector('.eye');
-const eyeCloseButton = document.querySelector('.eye-off');
+const resetBtn = document.querySelector('.resetbtn');
 
 
-logInBtn.addEventListener ('click', () => {
+
+resetBtn.addEventListener ('click', () => {
     const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
 
     const formData = {
-        email: email,
-        password: password
+        email: email
     }
     
 
-    const endPoint = 'https://internhub-test.up.railway.app/auth/user-login';
+    const endPoint = 'https://internhub-test.up.railway.app/auth/request-password-reset';
 
     fetch(endPoint, {
         method: 'POST',
@@ -28,11 +24,6 @@ logInBtn.addEventListener ('click', () => {
     .then( data => {
         console.log(data);
         alert(data[0].message);
-        const accessToken = data[0].data.access_token;
-        const refreshToken = data[0].data.refresh_token;
-
-        localStorage.setItem('accessToken', accessToken);
-        localStorage.setItem('refreshToken', refreshToken);
     })
     .catch( error => {
         console.log('Error:', error);
@@ -40,24 +31,4 @@ logInBtn.addEventListener ('click', () => {
     });
 });
  
-
-
-eyeCloseButton.addEventListener('click' , () => {
-    if (passwordInput.type === 'password') {
-        eyeCloseButton.style.display = 'none';
-        eyeButton.style.display = 'block';
-        passwordInput.type = 'text';
-    } 
-
-});
-
-eyeButton.addEventListener('click' , () => {
-    if (passwordInput.type === 'text') {
-        eyeCloseButton.style.display = 'block';
-        eyeButton.style.display = 'none';
-        passwordInput.type = 'password';
-    } 
-   
-});
-
 

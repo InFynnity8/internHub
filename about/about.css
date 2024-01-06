@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    width: 100%;
+    width: fit-content;
 }
 
 
@@ -476,15 +476,53 @@ h6{
     color: rgb(77, 135, 242);
     font-size: 23px;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .people{
-    height: 500px;
+    height: 450px;
+    display: flex;
+    overflow-x: auto;
+    width: 1349px;
+    padding-left: 50px;
+    padding-right: 30px;
 }
 
+.people li {
+    margin-right: 20px;
+    list-style: none;
+}
 
+.people .person {
+    background: rgb(77, 135, 242);
+    height: 320px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 40px 30px 0px 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
 
+.people .person p{
+    margin-bottom: 20px;
+}
+
+.people .says {
+    height: 100px;
+    width: 100px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    left: 130px;
+    top: 50px;
+    border: 5px solid white;
+    background-image: url('/asset/prodef.jpg');
+    background-size: contain;
+}
 
 
 

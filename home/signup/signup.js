@@ -2,7 +2,8 @@
 const signUpBtn = document.querySelector('.signupbtn');
 
 
-signUpBtn.addEventListener ( 'click', () => {
+signUpBtn.addEventListener ( 'click', (e) => {
+    // e.preventDefault()
     const fullName = document.getElementById('full_name').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
